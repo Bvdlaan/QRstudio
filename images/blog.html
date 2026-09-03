@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VCPVG9E934"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VCPVG9E934');
+  </script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO -->
+  <title>Blog over QR-codes | QR Studio</title>
+  <meta name="description" content="Ontdek alle artikelen van QR Studio over gratis QR-codes, Wi-Fi QR-codes, restaurants, zorg, mobiel en meer. Praktische uitleg, voorbeelden en handleidingen.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.qrstudio.nl/blog.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Blog over QR-codes | QR Studio">
+  <meta property="og:description" content="Alle QR Studio blogartikelen op één plek. Leer alles over gratis QR-codes, Wi-Fi, horeca, zorg en mobiel scannen.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.qrstudio.nl/blog.html">
+  <meta property="og:image" content="https://www.qrstudio.nl/og-image.png">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Blog specific styles -->
+  <style>
+    .blog-intro {
+      max-width: 800px;
+      margin: 0 auto 40px auto;
+      color: var(--text-muted);
+      font-size: 1rem;
+      line-height: 1.8;
+      text-align: center;
+    }
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      margin-top: 24px;
+    }
+
+    .blog-card {
+      background: var(--card);
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow);
+    }
+
+    .blog-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .blog-card-body {
+      padding: 20px 20px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      flex: 1;
+    }
+
+    .blog-card h2 {
+      font-size: 1.05rem;
+      margin: 0;
+      color: var(--text);
+    }
+
+    .blog-card p {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .blog-meta {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .blog-card-footer {
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .blog-card-footer a.btn {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+
+    .tag {
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      white-space: nowrap;
+    }
+
+    @media (max-width: 480px) {
+      .blog-card img {
+        height: 160px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <a href="/" class="logo">
+          <span class="logo-icon">◐</span>
+          <span class="logo-text">QR Studio</span>
+        </a>
+      </div>
+
+      <div class="nav-menu" id="navMenu">
+        <a href="/#generator" class="nav-link">Generator</a>
+        <a href="/#types" class="nav-link">QR types</a>
+        <a href="/#faq" class="nav-link">Veelgestelde vragen</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="gratis-qr-code.html" class="nav-link">Waarom QR Studio?</a>
+
+        <button class="theme-toggle" id="themeToggle" aria-label="Wissel thema">
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span class="gradient-text">Blog over QR-codes</span>
+      </h1>
+      <p class="hero-subtitle">
+        Alle QR Studio artikelen op één plek. Praktische uitleg, handleidingen en voorbeelden om zelf gratis QR-codes te maken en slim in te zetten.
+      </p>
+      <div class="hero-actions">
+        <a href="/#generator" class="btn btn-primary btn-large">Maak direct een QR-code →</a>
+        <a href="#blog-overview" class="btn btn-ghost btn-large">Bekijk alle artikelen</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Blog overview -->
+  <main id="blog-overview" class="main-content">
+    <div class="container">
+      <p class="blog-intro">
+        Op deze pagina vind je een overzicht van alle artikelen die we bij QR Studio hebben geschreven. 
+        Van uitleg over <a href="https://www.qrstudio.nl/hoe-qr-code-maken.html">hoe je een QR-code maakt</a> tot praktische voorbeelden voor Wi-Fi, horeca, zorg en mobiel gebruik. 
+        Klik op een artikel om de volledige gids te lezen.
+      </p>
+
+      <div class="blog-grid">
+
+        <!-- Blog 1 -->
+        <article class="blog-card">
+          <img src="/images/10-reasons-qr.webp" alt="Illustratie over redenen om QR-codes te gebruiken">
+          <div class="blog-card-body">
+            <div class="blog-meta">Basisgids • QR-codes maken</div>
+            <h2>Hoe maak je een QR-code?</h2>
+            <p>
+              Leer stap voor stap hoe je zelf gratis een QR-code maakt. Inclusief uitleg over verschillende QR-types, praktische voorbeelden en tips voor gebruik in print en online.
+            </p>
+            <div class="blog-card-footer">
+              <a href="hoe-qr-code-maken.html" class="btn btn-primary">Lees artikel</a>
+              <span class="tag">Handleiding</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Blog 2 -->
+        <article class="blog-card">
+          <img src="/images/qr-code.webp" alt="Afbeelding van een QR-code op papier en scherm">
+          <div class="blog-card-body">
+            <div class="blog-meta">Gratis tools • QR Studio</div>
+            <h2>Gratis QR-code maken zonder beperkingen</h2>
+            <p>
+              Ontdek hoe je met QR Studio gratis QR-codes maakt zonder tracking, tijdslimiet of verborgen kosten. Ideaal voor particulieren, ondernemers en non-profit organisaties.
+            </p>
+            <div class="blog-card-footer">
+              <a href="gratis-qr-code-maken.html" class="btn btn-primary">Lees artikel</a>
+              <span class="tag">Gratis</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Blog 3 -->
+        <article class="blog-card">
+          <img src="/images/how-companies-use-qr.webp" alt="Kantooromgeving waar QR-codes worden gebruikt">
+          <div class="blog-card-body">
+            <div class="blog-meta">Achtergrond • Echt gratis</div>
+            <h2>Wanneer is een QR-code echt gratis?</h2>
+            <p>
+              Veel generators lijken gratis, maar gebruiken tracking of tijdslimieten. In dit artikel leggen we uit wat een écht gratis QR-code is en hoe QR Studio daarmee omgaat.
+            </p>
+            <div class="blog-card-footer">
+              <a href="echt-gratis-qr-code.html" class="btn btn-primary">Lees artikel</a>
+              <span class="tag">Privacy</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Blog 4 -->
+        <article class="blog-card">
+          <img src="/images/qr-office.webp" alt="Wi-Fi QR-code in een huiskamer of kantoor">
+          <div class="blog-card-body">
+            <div class="blog-meta">Wi-Fi • Thuis en gasten</div>
+            <h2>Wi-Fi QR-code voor gasten thuis</h2>
+            <p>
+              Laat visite in één scan verbinden met je Wi-Fi. Ideaal voor logees, verjaardagen en kleine bijeenkomsten. Met tips voor kaartjes, bordjes en stickers in huis.
+            </p>
+            <div class="blog-card-footer">
+              <a href="wifi-qr-code-voor-gasten-thuis.html" class="btn btn-primary">Lees artikel</a>
+              <span class="tag">Wi-Fi</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Blog 5 -->
+        <article class="blog-card">
+          <img src="/images/qr-restaurant.webp" alt="QR-code gebruikt in een restaurant of café">
+          <div class="blog-card-body">
+            <div class="blog-meta">Horeca • Menukaarten</div>
+            <h2>QR-codes voor restaurants die altijd werken</h2>
+            <p>
+              Gebruik stabiele QR-codes voor menukaarten, bestellingen, acties en Wi-Fi in jouw restaurant. Zonder abonnement, tracking of verlopen links.
+            </p>
+            <div class="blog-card-footer">
+              <a href="qr-code-voor-restaurants.html" class="btn btn-primary">Lees artikel</a>
+              <span class="tag">Horeca</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Blog 6 -->
+        <article class="blog-card">
+          <img src="/images/qr-office3.webp" alt="Zorgomgeving met gebruik van QR-codes">
+          <div class="blog-card-body">
+            <div class="blog-meta">Wi-Fi • Zorg en instellingen</div>
+            <h2>Wi-Fi QR-codes in de gezondheidszorg</h2>
+            <p>
+              Hoe zorginstellingen, ziekenhuizen en praktijken Wi-Fi QR-codes gebruiken om patiënten en bezoekers veilig en eenvoudig toegang te geven tot gastnetwerken.
+            </p>
+            <div class="blog-card-footer">
+              <a href="wifi-qr-gezondheidszorg.html" class="btn btn-primary">Lees artikel</a>
+              <span class="tag">Zorg</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Blog 7 -->
+        <article class="blog-card">
+          <img src="/images/qr-airbnb.webp" alt="Airbnb of vakantiehuis met QR-code voor Wi-Fi">
+          <div class="blog-card-body">
+            <div class="blog-meta">Wi-Fi • Airbnb en vakantie</div>
+            <h2>Wi-Fi QR-code voor thuis en Airbnb</h2>
+            <p>
+              Maak één Wi-Fi QR-code voor al je thuisgasten en Airbnb-bezoekers. Perfect voor welkomstkaarten, huisregels en informatiemap in je accommodatie.
+            </p>
+            <div class="blog-card-footer">
+              <a href="wifi-qr-code-voor-thuis-en-airbnb.html" class="btn btn-primary">Lees artikel</a>
+              <span class="tag">Airbnb</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Blog 8 -->
+        <article class="blog-card">
+          <img src="/images/qr-iphone.webp" alt="iPhone die een QR-code scant">
+          <div class="blog-card-body">
+            <div class="blog-meta">Scannen • iOS</div>
+            <h2>Hoe scan je een QR-code met je iPhone?</h2>
+            <p>
+              Uitleg voor iPhone-gebruikers: waar vind je de QR-functie, welke instellingen zijn handig en hoe los je problemen met scannen op in iOS.
+            </p>
+            <div class="blog-card-footer">
+              <a href="hoe-qr-code-scannen-met-iphone.html" class="btn btn-primary">Lees artikel</a>
+              <span class="tag">iPhone</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Blog 9 -->
+        <article class="blog-card">
+          <img src="/images/qr-android.webp" alt="Android telefoon met QR-code op het scherm">
+          <div class="blog-card-body">
+            <div class="blog-meta">Scannen • Android</div>
+            <h2>QR-code scannen met Android</h2>
+            <p>
+              Stap-voor-stap uitleg voor Android-telefoons. Van camera-app tot ingebouwde QR-scanners van fabrikanten en tips bij slechte verlichting.
+            </p>
+            <div class="blog-card-footer">
+              <a href="qr-code-scannen-met-android.html" class="btn btn-primary">Lees artikel</a>
+              <span class="tag">Android</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Blog 10 -->
+        <article class="blog-card">
+          <img src="/images/qr-android.webp" alt="Samsung telefoon die een QR-code scant">
+          <div class="blog-card-body">
+            <div class="blog-meta">Scannen • Samsung</div>
+            <h2>Hoe scan je een QR-code met Samsung?</h2>
+            <p>
+              Specifieke handleiding voor Samsung-toestellen, inclusief Samsung Internet, camera-instellingen en veelvoorkomende foutmeldingen.
+            </p>
+            <div class="blog-card-footer">
+              <a href="hoe-qr-code-scannen-met-samsung.html" class="btn btn-primary">Lees artikel</a>
+              <span class="tag">Samsung</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Blog 11 -->
+        <article class="blog-card">
+          <img src="/images/qr-office.webp" alt="Persoon die op mobiel een QR-code aanmaakt">
+          <div class="blog-card-body">
+            <div class="blog-meta">Mobiel • QR-codes maken</div>
+            <h2>QR-code maken op je mobiel</h2>
+            <p>
+              Leer hoe je zonder computer een QR-code maakt. Ideaal als je snel een link, Wi-Fi of contactgegevens wilt delen vanaf je telefoon.
+            </p>
+            <div class="blog-card-footer">
+              <a href="qr-code-maken-op-mobiel.html" class="btn btn-primary">Lees artikel</a>
+              <span class="tag">Mobiel</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Blog 12 -->
+        <article class="blog-card">
+          <img src="/images/10-reasons-qr.webp" alt="Illustratie van kantoor waar QR-codes worden ingezet">
+          <div class="blog-card-body">
+            <div class="blog-meta">Over QR Studio • Waarom</div>
+            <h2>Waarom QR Studio voor jouw QR-codes?</h2>
+            <p>
+              Een overzicht van de voordelen van QR Studio: gratis gebruik, geen registratie, geen tracking, hoge kwaliteit en veilig voor zakelijk en persoonlijk gebruik.
+            </p>
+            <div class="blog-card-footer">
+              <a href="gratis-qr-code.html" class="btn btn-primary">Lees artikel</a>
+              <span class="tag">Over ons</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Helpful Links -->
+  <section class="section-helpful-links">
+    <div class="container">
+      <h2 class="section-title">Meer over QR-codes</h2>
+      <ul class="helpful-links">
+        <li><a href="hoe-qr-code-scannen-met-iphone.html">Hoe QR-code scannen met iPhone</a></li>
+        <li><a href="qr-code-scannen-met-android.html">Hoe QR-code scannen met Android</a></li>
+        <li><a href="hoe-qr-code-scannen-met-samsung.html">Hoe QR-code scannen met Samsung</a></li>
+        <li><a href="qr-code-maken-op-mobiel.html">Kan je een QR-code maken op je mobiel?</a></li>
+        <li><a href="hoe-qr-code-maken.html">Hoe maak je een QR-code?</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo-icon">◐</span>
+          <span class="logo-text">QR Studio</span>
+        </div>
+        <div class="footer-links">
+          <a href="privacy.html">Privacy</a>
+          <a href="voorwaarden.html">Voorwaarden</a>
+          <a href="https://aipersoneelstraining.nl/contact/" target="_blank" rel="noopener noreferrer">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 QR Studio — Gratis QR-code generator op <a href="https://www.qrstudio.nl">www.qrstudio.nl</a> door <a href="https://www.aipersoneelstraining.nl" target="_blank" rel="noopener noreferrer">AI Personeelstraining</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>

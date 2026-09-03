@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QVTWR6W7HC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-QVTWR6W7HC');
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Sitemap | QR Studio</title>
+  <meta name="description" content="Overzicht van alle QR Studio pagina's, inclusief de gratis QR-code generator, handleidingen, toepassingen, privacyinformatie en contactpagina.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://qrstudio.nl/sitemap.html">
+  <link rel="alternate" hreflang="nl" href="https://qrstudio.nl/sitemap.html">
+  <link rel="alternate" hreflang="en" href="https://qrstudio.eu/sitemap.html">
+  <link rel="alternate" hreflang="x-default" href="https://qrstudio.eu/sitemap.html">
+
+  <meta property="og:title" content="Sitemap | QR Studio">
+  <meta property="og:description" content="Volledig overzicht van alle QR Studio pagina's.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://qrstudio.nl/sitemap.html">
+  <meta property="og:image" content="https://qrstudio.nl/og-image.png">
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    .sitemap-hero {
+      min-height: 360px;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(110, 231, 183, 0.14), transparent 28%),
+        radial-gradient(circle at 80% 18%, rgba(125, 211, 252, 0.12), transparent 32%);
+    }
+
+    .sitemap-hero .hero-content {
+      max-width: 820px;
+      text-align: center;
+    }
+
+    .sitemap-intro {
+      max-width: 820px;
+      margin: 0 auto 42px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 1.08rem;
+      line-height: 1.8;
+    }
+
+    .sitemap-grid {
+      max-width: 1120px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .sitemap-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 28px;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .sitemap-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(110, 231, 183, 0.35);
+      box-shadow: var(--shadow);
+    }
+
+    .sitemap-card h2 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 18px;
+      color: var(--text);
+      font-size: 1.25rem;
+      line-height: 1.25;
+    }
+
+    .sitemap-card h2 span {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, rgba(110, 231, 183, 0.18), rgba(125, 211, 252, 0.16));
+      color: var(--accent);
+      font-size: 1rem;
+    }
+
+    .sitemap-list {
+      list-style: none;
+      display: grid;
+      gap: 10px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .sitemap-list a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 11px 0;
+      color: var(--text-muted);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .sitemap-list li:last-child a {
+      border-bottom: 0;
+    }
+
+    .sitemap-list a::after {
+      content: "->";
+      color: var(--accent);
+      font-weight: 700;
+      transition: transform 0.2s ease;
+    }
+
+    .sitemap-list a:hover {
+      color: var(--text);
+      opacity: 1;
+    }
+
+    .sitemap-list a:hover::after {
+      transform: translateX(4px);
+    }
+
+    .sitemap-cta {
+      max-width: 860px;
+      margin: 48px auto 0;
+      padding: 30px;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      background: linear-gradient(135deg, rgba(110, 231, 183, 0.1), rgba(125, 211, 252, 0.08));
+      text-align: center;
+    }
+
+    .sitemap-cta p {
+      margin-bottom: 20px;
+      color: var(--text-muted);
+      font-size: 1.05rem;
+    }
+
+    @media (max-width: 820px) {
+      .sitemap-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .sitemap-card {
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <a href="/" class="logo">
+          <span class="logo-icon">◐</span>
+          <span class="logo-text">QR Studio</span>
+        </a>
+      </div>
+
+      <div class="nav-menu" id="navMenu">
+        <a href="/#generator" class="nav-link">Generator</a>
+        <a href="/#types" class="nav-link">QR types</a>
+        <a href="/#faq" class="nav-link">Veelgestelde vragen</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="gratis-qr-code.html" class="nav-link">Waarom QR Studio?</a>
+        <a href="https://qrstudio.eu/sitemap.html" target="_blank" rel="noopener noreferrer" class="language-switch"
+          aria-label="Switch to English version">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16">
+            <defs>
+              <clipPath id="a">
+                <rect width="12" height="16" fill="#fff" />
+              </clipPath>
+              <clipPath id="b">
+                <rect x="12" width="12" height="16" fill="#fff" />
+              </clipPath>
+            </defs>
+            <g clip-path="url(#a)">
+              <rect width="24" height="16" fill="#012169" />
+              <path stroke="#fff" stroke-width="3.2" d="M0 0L24 16M24 0L0 16" />
+              <path stroke="#C8102E" stroke-width="2" d="M0 0L24 16M24 0L0 16" />
+              <path stroke="#fff" stroke-width="4.8" d="M12 0v16M0 8h24" />
+              <path stroke="#C8102E" stroke-width="3.2" d="M12 0v16M0 8h24" />
+            </g>
+            <g clip-path="url(#b)">
+              <rect x="12" width="12" height="16" fill="#B22234" />
+              <path fill="#fff"
+                d="M12 0h12v1.23H12zm0 2.46h12v1.23H12zm0 2.46h12v1.23H12zm0 2.46h12v1.23H12zm0 2.46h12v1.23H12zm0 2.46h12v1.23H12z" />
+              <rect x="12" width="6" height="8.6" fill="#3C3B6E" />
+            </g>
+          </svg>
+        </a>
+        <button class="theme-toggle" aria-label="Wissel thema">
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <header class="hero sitemap-hero">
+    <div class="hero-content">
+      <h1 class="hero-title"><span class="gradient-text">Sitemap</span></h1>
+      <p class="hero-subtitle">Alle QR Studio pagina's overzichtelijk bij elkaar.</p>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+      <div class="sitemap-intro">
+        <p>
+          Gebruik deze sitemap om snel naar de gratis QR-code generator, handleidingen, praktische voorbeelden en
+          juridische pagina's van QR Studio te gaan.
+        </p>
+      </div>
+
+      <div class="sitemap-grid">
+        <section class="sitemap-card">
+          <h2><span>01</span>Kernpagina's</h2>
+          <ul class="sitemap-list">
+            <li><a href="/">Homepagina en generator</a></li>
+            <li><a href="blog.html">Blog overzicht</a></li>
+            <li><a href="gratis-qr-code.html">Waarom QR Studio?</a></li>
+            <li><a href="echt-gratis-qr-code.html">Echt gratis QR-codes</a></li>
+            <li><a href="gratis-qr-codes-zonder-verborgen-kosten.html">Gratis QR-codes zonder verborgen kosten</a></li>
+            <li><a href="gratis-qr-code-generator.html">Gratis QR-code generator</a></li>
+            <li><a href="gratis-qr-code-maken.html">Gratis QR-code maken</a></li>
+            <li><a href="hoe-qrstudio-anders-is.html">Hoe QR Studio anders is</a></li>
+            <li><a href="workflow-automatisering-productiviteit.html">Workflow automatisering en productiviteit</a></li>
+          </ul>
+        </section>
+
+        <section class="sitemap-card">
+          <h2><span>02</span>QR-codes maken</h2>
+          <ul class="sitemap-list">
+            <li><a href="hoe-qr-code-maken.html">Hoe maak je een QR-code?</a></li>
+            <li><a href="hoe-qr-code-maken-met-iphone.html">QR-code maken met iPhone</a></li>
+            <li><a href="qr-code-maken-op-mobiel.html">QR-code maken op je mobiel</a></li>
+            <li><a href="hoe-wifi-qr-code-maken.html">Hoe maak je een WiFi-QR-code?</a></li>
+            <li><a href="statische-en-vaste-qr-codes.html">Statische en vaste QR-codes</a></li>
+            <li><a href="verschil-tussen-statisch-dynamisch-qr.html">Statische vs dynamische QR-codes</a></li>
+          </ul>
+        </section>
+
+        <section class="sitemap-card">
+          <h2><span>03</span>QR-codes scannen</h2>
+          <ul class="sitemap-list">
+            <li><a href="hoe-qr-code-scannen-met-iphone.html">QR-code scannen met iPhone</a></li>
+            <li><a href="qr-code-scannen-met-android.html">QR-code scannen met Android</a></li>
+            <li><a href="hoe-qr-code-scannen-met-samsung.html">QR-code scannen met Samsung</a></li>
+          </ul>
+        </section>
+
+        <section class="sitemap-card">
+          <h2><span>04</span>Praktische toepassingen</h2>
+          <ul class="sitemap-list">
+            <li><a href="qr-code-voor-restaurants.html">QR-codes voor restaurants</a></li>
+            <li><a href="qr-code-voor-evenementen.html">QR-codes voor evenementen</a></li>
+            <li><a href="qr-code-social-media.html">QR-codes voor social media</a></li>
+            <li><a href="qr-codes-wachtkamers-medische-praktijken.html">QR-codes voor wachtkamers en medische praktijken</a></li>
+            <li><a href="wifi-qr-code-voor-gasten-thuis.html">WiFi-QR-code voor gasten thuis</a></li>
+            <li><a href="wifi-qr-code-voor-thuis-en-airbnb.html">WiFi-QR-code voor thuis en Airbnb</a></li>
+            <li><a href="wifi-qr-gezondheidszorg.html">WiFi-QR-codes in de gezondheidszorg</a></li>
+          </ul>
+        </section>
+
+        <section class="sitemap-card">
+          <h2><span>05</span>Informatie</h2>
+          <ul class="sitemap-list">
+            <li><a href="privacy.html">Privacyverklaring</a></li>
+            <li><a href="voorwaarden.html">Gebruiksvoorwaarden</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="sitemap-cta">
+        <p>Klaar om direct een gratis QR-code te maken zonder account of verborgen kosten?</p>
+        <a href="/#generator" class="btn btn-primary btn-large">Maak gratis QR-code</a>
+      </div>
+    </div>
+      <div class="container">
+        <p>Nieuw op de site? Start dan met de uitleg over <a href="gratis-qr-code.html">waarom QR Studio gratis is</a>.</p>
+      </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo-icon">◐</span>
+          <span class="logo-text">QR Studio</span>
+        </div>
+        <div class="footer-links">
+          <a href="privacy.html">Privacy</a>
+          <a href="voorwaarden.html">Voorwaarden</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 QR Studio - Gratis QR-code generator op <a href="https://qrstudio.nl">qrstudio.nl</a>
+          door <a href="https://www.aipersoneelstraining.nl" target="_blank" rel="noopener noreferrer">AI
+            Personeelstraining</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="breadcrumb-schema.js" defer></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

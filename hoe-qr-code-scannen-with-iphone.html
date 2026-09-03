@@ -1,0 +1,811 @@
+﻿<!doctype html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QVTWR6W7HC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-QVTWR6W7HC');
+  </script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO -->
+  <title>Hoe scan je een QR-code met je iPhone? | QR Studio</title>
+  <meta name="description"
+    content="Leer hoe je eenvoudig QR-codes scant met je iPhone via de camera of codescanner. Volledige handleiding zonder apps.">
+  <meta name="keywords"
+    content="QR-code scannen iPhone, QR-code iOS, QR code iPhone camera, QR scannen Apple, QR iPhone gids">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://qrstudio.nl/hoe-qr-code-scannen-met-iphone.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Hoe scan je een QR-code met je iPhone? | QR Studio">
+  <meta property="og:description"
+    content="Volledige stap-voor-stap uitleg over het scannen van QR-codes met de iPhone-camera of codescanner. Geen app vereist.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://qrstudio.nl/hoe-qr-code-scannen-met-iphone.html">
+  <meta property="og:image" content="https://qrstudio.nl/og-image.png">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Article-specific improvements */
+    .article-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .article-container h1,
+    .article-container h2,
+    .article-container h3,
+    .article-container p,
+    .article-container ul,
+    .article-container ol,
+    .article-container li {
+      text-align: left;
+    }
+
+    .article-container p {
+      margin-bottom: 28px;
+      line-height: 1.75;
+    }
+
+    .article-container h2 {
+      margin-top: 56px;
+      margin-bottom: 28px;
+      font-size: 1.75rem;
+      font-weight: 600;
+    }
+
+    .article-container h3 {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+
+    .article-container ul,
+    .article-container ol {
+      margin-bottom: 28px;
+      padding-left: 28px;
+    }
+
+    .article-container li {
+      margin-bottom: 12px;
+      line-height: 1.7;
+    }
+
+    .howto-steps {
+      margin-bottom: 40px;
+      padding-left: 20px;
+    }
+
+    .howto-steps li {
+      margin-bottom: 32px;
+      padding-left: 0;
+    }
+
+    .howto-steps li p {
+      margin-top: 12px;
+      margin-bottom: 20px;
+    }
+
+    .faq-item h3,
+    .faq-item p {
+      text-align: left;
+    }
+
+    .faq-item p {
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .hero-subtitle {
+      text-align: center;
+    }
+
+    .hero-actions {
+      text-align: center;
+    }
+
+    hr {
+      margin: 48px 0;
+      border: none;
+      border-top: 1px solid var(--border);
+    }
+
+    /* Better spacing for strong elements */
+    .article-container p strong {
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    /* Author section styling */
+    .author-section {
+      margin: 32px 0;
+      padding: 24px;
+      background: var(--bg-secondary);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+    }
+
+    .author-info p {
+      margin-bottom: 0;
+      color: var(--text-muted);
+      font-size: 15px;
+      text-align: center;
+    }
+
+    .author-info a {
+      color: var(--accent2);
+      font-weight: 500;
+    }
+
+    .author-info a:hover {
+      opacity: 0.8;
+    }
+
+    /* Social Media Sharing sectie - exact kopie van blogartikel template */
+    .qrs-social-container {
+      width: 100%;
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 0 15px;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    .qrs-section-title {
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 20px;
+      color: var(--text) !important;
+      font-weight: 500;
+    }
+
+    .qrs-social-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 40px;
+    }
+
+    .qrs-icon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none !important;
+      border-bottom: none !important;
+      box-shadow: none !important;
+      width: 85px;
+      transition: all 0.3s ease;
+    }
+
+    .qrs-icon:hover {
+      transform: translateY(-5px);
+    }
+
+    .qrs-icon-circle {
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .qrs-icon:hover .qrs-icon-circle {
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .qrs-icon-circle i {
+      color: white;
+      font-size: 28px;
+    }
+
+    .qrs-label {
+      font-size: 14px;
+      color: var(--text-muted) !important;
+      text-align: center;
+      font-weight: 500;
+      text-decoration: none !important;
+    }
+
+    /* Kleuren */
+    .qrs-linkedin .qrs-icon-circle {
+      background-color: #0A66C2;
+    }
+
+    .qrs-facebook .qrs-icon-circle {
+      background-color: #1877F2;
+    }
+
+    .qrs-twitter .qrs-icon-circle {
+      background-color: #1DA1F2;
+    }
+
+    .qrs-email .qrs-icon-circle {
+      background-color: #555;
+    }
+
+    .qrs-whatsapp .qrs-icon-circle {
+      background-color: #25D366;
+    }
+
+    @media (max-width: 600px) {
+      .qrs-icon {
+        width: 70px;
+      }
+
+      .qrs-icon-circle {
+        width: 55px;
+        height: 55px;
+      }
+
+      .qrs-icon-circle i {
+        font-size: 24px;
+      }
+
+      .qrs-label {
+        font-size: 12px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .article-container {
+        padding: 0 20px;
+      }
+
+      .article-container p {
+        margin-bottom: 24px;
+      }
+
+      .article-container h2 {
+        margin-top: 48px;
+        margin-bottom: 24px;
+        font-size: 1.5rem;
+      }
+
+      .article-container h3 {
+        margin-top: 32px;
+        margin-bottom: 16px;
+        font-size: 1.2rem;
+      }
+
+      .howto-steps li {
+        margin-bottom: 28px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .article-container {
+        padding: 0 16px;
+      }
+
+      .article-container ul,
+      .article-container ol {
+        padding-left: 20px;
+      }
+
+      .howto-steps {
+        padding-left: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <a href="/" class="logo">
+          <span class="logo-icon">◐</span>
+          <span class="logo-text">QR Studio</span>
+        </a>
+      </div>
+      <div class="nav-menu" id="navMenu">
+        <a href="/#generator" class="nav-link">Generator</a>
+        <a href="/#types" class="nav-link">QR types</a>
+        <a href="/#faq" class="nav-link">Veelgestelde vragen</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="gratis-qr-code.html" class="nav-link">Waarom QR Studio?</a>
+        <a href="https://qrstudio.eu" target="_blank" rel="noopener noreferrer" class="language-switch"
+          aria-label="Switch to English version">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16">
+            <defs>
+              <clipPath id="a">
+                <rect width="12" height="16" fill="#fff" />
+              </clipPath>
+              <clipPath id="b">
+                <rect x="12" width="12" height="16" fill="#fff" />
+              </clipPath>
+            </defs>
+            <g clip-path="url(#a)">
+              <rect width="24" height="16" fill="#012169" />
+              <path stroke="#fff" stroke-width="3.2" d="M0 0L24 16M24 0L0 16" />
+              <path stroke="#C8102E" stroke-width="2" d="M0 0L24 16M24 0L0 16" />
+              <path stroke="#fff" stroke-width="4.8" d="M12 0v16M0 8h24" />
+              <path stroke="#C8102E" stroke-width="3.2" d="M12 0v16M0 8h24" />
+            </g>
+            <g clip-path="url(#b)">
+              <rect x="12" width="12" height="16" fill="#B22234" />
+              <path fill="#fff"
+                d="M12 0h12v1.23H12zm0 2.46h12v1.23H12zm0 2.46h12v1.23H12zm0 2.46h12v1.23H12zm0 2.46h12v1.23H12zm0 2.46h12v1.23H12z" />
+              <rect x="12" width="6" height="8.6" fill="#3C3B6E" />
+              <path fill="#fff"
+                d="m13.2 1.72.37.27-.14.44-.44-.14.21-.57zm1.2 0 .37.27-.14.44-.44-.14.21-.57zm1.2 0 .37.27-.14.44-.44-.14.21-.57zm1.2 0 .37.27-.14.44-.44-.14.21-.57zm-3 1.2.37.27-.14.44-.44-.14.21-.57zm1.2 0 .37.27-.14.44-.44-.14.21-.57zm1.2 0 .37.27-.14.44-.44-.14.21-.57zm-2.4 1.2.37.27-.14.44-.44-.14.21-.57zm1.2 0 .37.27-.14.44-.44-.14.21-.57zm1.2 0 .37.27-.14.44-.44-.14.21-.57zm-3 1.2.37.27-.14.44-.44-.14.21-.57zm1.2 0 .37.27-.14.44-.44-.14.21-.57zm1.2 0 .37.27-.14.44-.44-.14.21-.57z" />
+            </g>
+          </svg>
+        </a>
+
+        <button class="theme-toggle" aria-label="Wissel tussen licht en donker thema">
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title"><span class="gradient-text">Hoe scan je een QR-code met je iPhone?</span></h1>
+      <p class="hero-subtitle">
+        Gebruik de standaard Camera-app of activeer de codescanner. Geen extra apps nodig – alleen je iPhone.
+      </p>
+      <div class="hero-actions">
+        <a href="/#generator" class="btn btn-primary btn-large">Maak zelf een QR-code →</a>
+        <a href="/#types" class="btn btn-ghost btn-large">Bekijk alle QR-types</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container article-container">
+
+      <h2>Waarom QR-codes scannen met je iPhone zo handig is</h2>
+      <p>
+        Je iPhone heeft een ingebouwde QR-scanner die direct werkt vanuit de Camera-app. Geen aparte apps downloaden,
+        geen ingewikkelde instellingen. Richt je camera op een QR-code en je iPhone herkent deze automatisch. Dit werkt
+        voor alle soorten QR-codes: websites, Wi-Fi-netwerken, contactgegevens of tekstberichten.
+      </p>
+
+      <p>
+        Sinds iOS 11 is QR-scanning standaard ingeschakeld op alle iPhones. Of je nu een QR-code op een poster,
+        menukaart, visitekaartje of website tegenkomt – je iPhone kan ze allemaal lezen en direct de juiste actie
+        uitvoeren.
+      </p>
+
+      <h2>Methode 1: QR-code scannen via de Camera-app (meest gebruikte manier)</h2>
+      <p>
+        De Camera-app is de snelste en meest toegankelijke manier om QR-codes te scannen op je iPhone.
+      </p>
+
+      <ol class="howto-steps">
+        <li>
+          <strong>Open de Camera-app</strong>
+          <p>
+            Tik op de Camera-app vanaf je startscherm, of open hem via het toegangsscherm door van links naar rechts te
+            vegen en naar boven te swipen. Je kunt de camera ook snel openen vanuit het Bedieningspaneel.
+          </p>
+        </li>
+
+        <li>
+          <strong>Richt je camera op de QR-code</strong>
+          <p>
+            Houd je iPhone zo dat de QR-code volledig zichtbaar is in het camerabeeld. Je hoeft niet te zoomen of
+            perfect recht te houden – de iPhone herkent QR-codes ook vanuit een hoek. Zorg wel dat er genoeg licht is
+            om de code scherp te zien.
+          </p>
+        </li>
+
+        <li>
+          <strong>Tik op de automatische notificatie</strong>
+          <p>
+            Zodra je iPhone de QR-code herkent, verschijnt er automatisch een gele banner bovenin je scherm met de actie
+            of link. Tik hierop om de QR-code te "activeren" – bijvoorbeeld om een website te openen, Wi-Fi te
+            verbinden of contact op te slaan.
+          </p>
+        </li>
+      </ol>
+
+      <h2>Methode 2: QR-code scannen via de codescanner in het Bedieningspaneel</h2>
+      <p>
+        Voor wie regelmatig QR-codes scant, is de speciale codescanner in het Bedieningspaneel nog sneller. Deze functie
+        is speciaal gemaakt voor het scannen van QR-codes en barcodes.
+      </p>
+
+      <ol class="howto-steps">
+        <li>
+          <strong>Open het Bedieningspaneel</strong>
+          <p>
+            Veeg vanaf de rechterbovenhoek van je scherm naar beneden (iPhone X en nieuwer) of veeg vanaf de onderkant
+            van je scherm naar boven (iPhone 8 en ouder). Het Bedieningspaneel toont snelkoppelingen voor veelgebruikte
+            functies.
+          </p>
+        </li>
+
+        <li>
+          <strong>Tik op 'Scan code'</strong>
+          <p>
+            Zoek naar het pictogram met een vierkant en streepjes (QR-code symbool) en tik erop. Dit opent direct de
+            speciale scanner die geoptimaliseerd is voor het herkennen van codes.
+          </p>
+        </li>
+
+        <li>
+          <strong>Scan de QR-code</strong>
+          <p>
+            Richt je camera op de QR-code. De scanner geeft vaak een groene lijn of kader om te laten zien dat de code
+            is herkend. Tik vervolgens op de notificatie om de actie uit te voeren.
+          </p>
+        </li>
+      </ol>
+
+      <h2>Codescanner toevoegen aan je Bedieningspaneel</h2>
+      <p>
+        Zie je de optie 'Scan code' niet in je Bedieningspaneel? Dan kun je deze eenvoudig toevoegen:
+      </p>
+
+      <ol class="howto-steps">
+        <li>
+          <strong>Ga naar Instellingen</strong>
+          <p>
+            Open de Instellingen-app op je iPhone en scroll naar beneden tot je 'Bedieningspaneel' ziet.
+          </p>
+        </li>
+
+        <li>
+          <strong>Pas het Bedieningspaneel aan</strong>
+          <p>
+            Tik op 'Bedieningspaneel' en dan op 'Pas regelaars aan'. Je ziet nu een lijst met beschikbare functies die
+            je kunt toevoegen.
+          </p>
+        </li>
+
+        <li>
+          <strong>Voeg 'Scan code' toe</strong>
+          <p>
+            Zoek 'Scan code' in de lijst en tik op het groene plus-teken ernaast. De functie wordt nu toegevoegd aan je
+            Bedieningspaneel en is altijd beschikbaar voor snel QR-codes scannen.
+          </p>
+        </li>
+      </ol>
+
+      <h2>Tips voor het beste QR-scan resultaat</h2>
+      <p>
+        Om ervoor te zorgen dat je iPhone elke QR-code probleemloos kan lezen, zijn er een paar handige tips:
+      </p>
+
+      <ul>
+        <li><strong>Zorg voor voldoende licht:</strong> QR-codes scannen het beste bij helder licht. In donkere ruimtes
+          kun je de zaklamp van je iPhone aanzetten.</li>
+        <li><strong>Houd je iPhone stabiel:</strong> Een beetje bewegen is geen probleem, maar zorg dat de QR-code
+          scherp in beeld blijft.</li>
+        <li><strong>Niet te dichtbij:</strong> Houd ongeveer 15-30 cm afstand tot de QR-code. Te dichtbij en je iPhone
+          kan de code niet volledig zien.</li>
+        <li><strong>Reinig je camera-lens:</strong> Een vuile lens kan het scannen bemoeilijken. Veeg de lens schoon met
+          een zachte doek.</li>
+        <li><strong>Controleer je internetverbinding:</strong> Voor QR-codes die naar websites verwijzen, heb je een
+          actieve internet- of WiFi-verbinding nodig.</li>
+      </ul>
+
+      <h2>Wat gebeurt er na het scannen van een QR-code?</h2>
+      <p>
+        Afhankelijk van het type QR-code dat je scant, voert je iPhone automatisch de juiste actie uit:
+      </p>
+
+      <ul>
+        <li><strong>Website QR-codes:</strong> Je browser (meestal Safari) opent automatisch met de bijbehorende
+          webpagina.</li>
+        <li><strong>Wi-Fi QR-codes:</strong> Je iPhone vraagt of je wilt verbinden met het netwerk, zonder handmatig het
+          wachtwoord in te voeren.</li>
+        <li><strong>Contact QR-codes:</strong> De Contacten-app opent met de optie om de nieuwe contactgegevens op te
+          slaan.</li>
+        <li><strong>E-mail QR-codes:</strong> De Mail-app opent met een vooraf ingevuld e-mailadres en eventueel
+          onderwerp.</li>
+        <li><strong>Telefoon QR-codes:</strong> Je iPhone vraagt of je het nummer wilt bellen.</li>
+        <li><strong>Tekst QR-codes:</strong> Het bericht wordt getoond op je scherm.</li>
+      </ul>
+
+      <p>
+        Je kunt ook zelf <a href="https://qrstudio.nl/hoe-qr-code-maken.html">gratis QR-codes maken</a> met QR
+        Studio voor al deze doeleinden, zonder account of registratie.
+      </p>
+
+      <h2>Problemen oplossen bij het scannen van QR-codes</h2>
+      <p>
+        Werkt het scannen niet zoals verwacht? Deze oplossingen helpen meestal:
+      </p>
+
+      <ul>
+        <li><strong>Controleer of QR-scanning is ingeschakeld:</strong> Ga naar Instellingen > Camera en zorg dat
+          'QR-codes scannen' is ingeschakeld.</li>
+        <li><strong>Update je iOS:</strong> Oudere iOS-versies hebben soms problemen met bepaalde QR-code formaten.
+          Update naar de nieuwste versie.</li>
+        <li><strong>Herstart de Camera-app:</strong> Sluit de Camera-app volledig en open hem opnieuw.</li>
+        <li><strong>Probeer een andere hoek:</strong> Soms helpt het om de QR-code vanuit een iets andere hoek te
+          scannen.</li>
+        <li><strong>Controleer de QR-code kwaliteit:</strong> Beschadigde, vervagde of erg kleine QR-codes zijn
+          moeilijker te scannen.</li>
+      </ul>
+
+      <h2>Samenvatting: QR-codes scannen op iPhone</h2>
+      <p>
+        Het scannen van QR-codes op je iPhone is eenvoudig en snel. De Camera-app werkt het beste voor incidenteel
+        gebruik, terwijl de codescanner in het Bedieningspaneel handig is als je regelmatig QR-codes tegenkomt. Beide
+        methodes werken zonder extra apps en zijn vanaf iOS 11 standaard beschikbaar.
+      </p>
+
+      <p>
+        Met deze kennis kun je elke QR-code scannen die je tegenkomt: van restaurant menu's tot Wi-Fi-netwerken en van
+        visitekaartjes tot productinformatie.
+      </p>
+
+      <p><strong>Wil je zelf QR-codes maken voor anderen om te scannen?</strong></p>
+      <a href="/#generator" class="btn btn-primary btn-large">Maak gratis je QR-code</a>
+
+      <!-- Social media sectie -->
+      <div class="qrs-social-container">
+        <h3 class="qrs-section-title">Deel dit artikel</h3>
+        <div class="qrs-social-bar">
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https://qrstudio.nl/hoe-qr-code-scannen-met-iphone.html"
+            target="_blank" class="qrs-icon qrs-facebook" aria-label="Facebook delen">
+            <div class="qrs-icon-circle"><i class="fab fa-facebook-f"></i></div>
+            <span class="qrs-label">Facebook</span>
+          </a>
+          <a href="https://twitter.com/intent/tweet?url=https://qrstudio.nl/hoe-qr-code-scannen-met-iphone.html&text=Interessant%20artikel"
+            target="_blank" class="qrs-icon qrs-twitter" aria-label="Tweet dit">
+            <div class="qrs-icon-circle"><i class="fab fa-twitter"></i></div>
+            <span class="qrs-label">Twitter</span>
+          </a>
+          <a href="mailto:?subject=Bekijk%20dit%20artikel&body=https://qrstudio.nl/hoe-qr-code-scannen-met-iphone.html"
+            class="qrs-icon qrs-email" aria-label="Email dit artikel">
+            <div class="qrs-icon-circle"><i class="fas fa-envelope"></i></div>
+            <span class="qrs-label">Email</span>
+          </a>
+          <a href="https://wa.me/?text=https://qrstudio.nl/hoe-qr-code-scannen-met-iphone.html" target="_blank"
+            class="qrs-icon qrs-whatsapp" aria-label="Deel op WhatsApp">
+            <div class="qrs-icon-circle"><i class="fab fa-whatsapp"></i></div>
+            <span class="qrs-label">WhatsApp</span>
+          </a>
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://qrstudio.nl/hoe-qr-code-scannen-met-iphone.html"
+            target="_blank" class="qrs-icon qrs-linkedin" aria-label="LinkedIn delen">
+            <div class="qrs-icon-circle"><i class="fab fa-linkedin-in"></i></div>
+            <span class="qrs-label">LinkedIn</span>
+          </a>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Author Section -->
+      <section class="author-section">
+        <div class="author-info">
+          <p>
+            <strong>Artikel geschreven door <a href="https://nl.linkedin.com/in/bvdlaan" target="_blank"
+                rel="noopener noreferrer">Barry van der Laan</a>, AI trainer bij <a
+                href="https://aipersoneelstraining.nl/about/" target="_blank" rel="noopener noreferrer">AI
+                Personeelstraining</a></strong>
+          </p>
+        </div>
+      </section>
+
+      <hr>
+
+      <!-- FAQ Section -->
+      <section id="faq">
+        <h2 class="section-title">Veelgestelde vragen over QR-codes scannen op iPhone</h2>
+        <div class="faq-grid">
+
+          <div class="faq-item">
+            <h3><strong>Werkt QR-code scannen ook zonder internetverbinding?</strong></h3>
+            <p>
+              Ja, je kunt een QR-code scannen zonder internetverbinding. Maar als de QR-code naar een website verwijst,
+              heb je wel internet nodig om die pagina te openen. Voor Wi-Fi codes, contactgegevens of tekstberichten is
+              geen internet vereist.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3><strong>Welke iOS-versie is vereist om QR-codes te scannen?</strong></h3>
+            <p>
+              QR-scanning is standaard ingeschakeld vanaf iOS 11 en hoger. Heb je een oudere iPhone of iOS-versie, dan
+              kan deze functie ontbreken. Update naar de nieuwste iOS-versie voor de beste compatibiliteit.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3><strong>Worden QR-codes opgeslagen op mijn iPhone?</strong></h3>
+            <p>
+              Nee, gescande QR-codes worden niet automatisch opgeslagen op je iPhone. De informatie wordt alleen
+              gebruikt om de bijbehorende actie uit te voeren. Voor het opslaan van contactgegevens krijg je wel een
+              aparte vraag.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3><strong>Kan ik QR-codes scannen met een iPad?</strong></h3>
+            <p>
+              Ja, alle recente iPads hebben dezelfde QR-code scanner ingebouwd in de Camera-app, net als de iPhone. De
+              stappen zijn identiek aan die voor de iPhone.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3><strong>Hoe weet ik of mijn iPhone een QR-code herkent?</strong></h3>
+            <p>
+              Zodra je iPhone de QR-code herkent, verschijnt er automatisch een gele notificatie of banner bovenin het
+              camerascherm. Tik op deze melding om de actie uit te voeren die bij de QR-code hoort.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- FAQ Schema -->
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Werkt QR-code scannen ook zonder internetverbinding?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ja, je kunt een QR-code scannen zonder internetverbinding. Maar als de QR-code naar een website verwijst, heb je wel internet nodig om die pagina te openen. Voor Wi-Fi codes, contactgegevens of tekstberichten is geen internet vereist."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Welke iOS-versie is vereist om QR-codes te scannen?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "QR-scanning is standaard ingeschakeld vanaf iOS 11 en hoger. Heb je een oudere iPhone of iOS-versie, dan kan deze functie ontbreken. Update naar de nieuwste iOS-versie voor de beste compatibiliteit."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Worden QR-codes opgeslagen op mijn iPhone?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nee, gescande QR-codes worden niet automatisch opgeslagen op je iPhone. De informatie wordt alleen gebruikt om de bijbehorende actie uit te voeren. Voor het opslaan van contactgegevens krijg je wel een aparte vraag."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Kan ik QR-codes scannen met een iPad?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ja, alle recente iPads hebben dezelfde QR-code scanner ingebouwd in de Camera-app, net als de iPhone. De stappen zijn identiek aan die voor de iPhone."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Hoe weet ik of mijn iPhone een QR-code herkent?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Zodra je iPhone de QR-code herkent, verschijnt er automatisch een gele notificatie of banner bovenin het camerascherm. Tik op deze melding om de actie uit te voeren die bij de QR-code hoort."
+            }
+          }
+        ]
+      }
+      </script>
+
+      <!-- HowTo Structured Data -->
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Hoe scan je een QR-code met je iPhone?",
+        "description": "Leer hoe je eenvoudig QR-codes scant met je iPhone via de camera of codescanner. Volledige handleiding zonder apps.",
+        "image": "https://qrstudio.nl/og-image.png",
+        "totalTime": "PT1M",
+        "estimatedCost": {"@type": "MonetaryAmount", "currency": "EUR", "value": "0"},
+        "supply": [{"@type": "HowToSupply", "name": "iPhone met camera"}],
+        "tool": [{"@type": "HowToTool", "name": "Camera-app of codescanner"}],
+        "step": [
+          {"@type": "HowToStep", "name": "Open de Camera-app", "text": "Open de Camera-app op je iPhone vanaf het beginscherm, toegangsscherm of Bedieningspaneel."},
+          {"@type": "HowToStep", "name": "Richt op de QR-code", "text": "Houd je iPhone zodanig vast dat de QR-code goed zichtbaar is in het beeld."},
+          {"@type": "HowToStep", "name": "Open de notificatie", "text": "Tik op de bovenin weergegeven link om de actie van de QR-code te starten."}
+        ]
+      }
+      </script>
+
+    </div>
+  </main>
+
+  <!-- Helpful Links -->
+  <section class="section-helpful-links">
+    <div class="container">
+      <h2 class="section-title">Meer over QR-codes</h2>
+      <ul class="helpful-links">
+        <li><a href="qr-code-scannen-met-android.html">Hoe QR-code scannen met Android</a></li>
+        <li><a href="hoe-qr-code-scannen-met-samsung.html">Hoe QR-code scannen met Samsung</a></li>
+        <li><a href="qr-code-maken-op-mobiel.html">Kan je een QR-code maken op je mobiel?</a></li>
+        <li><a href="hoe-qr-code-maken.html">Hoe maak je een QR-code?</a></li>
+        <li><a href="gratis-qr-code-maken.html">Gratis QR-code maken</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo-icon">◐</span>
+          <span class="logo-text">QR Studio</span>
+        </div>
+        <div class="footer-links">
+          <a href="/privacy.html">Privacy</a>
+          <a href="/voorwaarden.html">Voorwaarden</a>
+          <a href="contact.html">Contact</a>
+          <a href="https://nl.linkedin.com/company/ai-personeelstraining" target="_blank" rel="noopener noreferrer"
+            aria-label="LinkedIn profiel van AI Personeelstraining">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <rect width="24" height="24" rx="1.5" fill="#0A66C2" />
+              <path fill="white"
+                d="M8 19H5v-9h3v9zM6.5 8.25A1.75 1.75 0 1 1 8.25 6.5 1.75 1.75 0 0 1 6.5 8.25zM19 19h-3v-4.75c0-1.4-1.2-2.5-2.5-2.5S11 12.85 11 14.25V19h-3v-9h2.9v1.3a3.11 3.11 0 0 1 2.6-1.4c2.5 0 4.5 2.2 4.5 5.15z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 QR Studio — Gratis QR-code generator op <a href="https://qrstudio.nl">qrstudio.nl</a> door
+          <a href="https://www.aipersoneelstraining.nl" target="_blank" rel="noopener noreferrer">AI
+            Personeelstraining</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="breadcrumb-schema.ts" defer></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

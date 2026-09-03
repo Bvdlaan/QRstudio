@@ -1,0 +1,586 @@
+﻿<!doctype html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QVTWR6W7HC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-QVTWR6W7HC');
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- SEO -->
+  <title>Contact met QR Studio | Vragen over gratis QR-codes</title>
+  <meta name="description"
+    content="Heb je vragen over onze gratis QR-code generator of het gebruik van QR-codes in jouw organisatie? Neem contact op met QR Studio via het contactformulier.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://qrstudio.nl/contact.html">
+  <!-- Hreflang Tags -->
+  <link rel="alternate" hreflang="nl" href="https://qrstudio.nl/contact.html" />
+  <link rel="alternate" hreflang="en" href="https://qrstudio.eu/contact.html" />
+  <link rel="alternate" hreflang="x-default" href="https://qrstudio.eu/contact.html" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact met QR Studio | Vragen over gratis QR-codes">
+  <meta property="og:description"
+    content="Neem contact op met QR Studio voor vragen over onze echt gratis QR-code generator, gebruik in zorg, onderwijs, horeca of events.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://qrstudio.nl/contact.html">
+  <meta property="og:image" content="https://qrstudio.nl/og-image.png">
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Contact page specific styles */
+    .article-container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .article-container h1,
+    .article-container h2,
+    .article-container h3,
+    .article-container p,
+    .article-container ul,
+    .article-container li {
+      text-align: left;
+    }
+
+    .article-container p {
+      margin-bottom: 24px;
+      line-height: 1.75;
+    }
+
+    .article-container h2 {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
+
+    .contact-card {
+      margin-top: 32px;
+      margin-bottom: 48px;
+      padding: 0;
+      background: transparent;
+      border: 0;
+      box-shadow: none;
+    }
+
+    .contact-overview {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.95fr);
+      gap: 24px;
+      align-items: stretch;
+      margin-bottom: 32px;
+    }
+
+    .contact-panel,
+    .contact-form-wrapper {
+      padding: 28px;
+      background: var(--bg-secondary);
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .contact-panel h2,
+    .contact-panel h3 {
+      margin-top: 0;
+    }
+
+    .contact-panel p:last-child {
+      margin-bottom: 0;
+    }
+
+    .contact-topic-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 20px;
+      margin-bottom: 32px;
+    }
+
+    .contact-topic {
+      padding: 16px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: var(--bg);
+    }
+
+    .contact-topic strong {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--text);
+      font-size: 0.98rem;
+    }
+
+    .contact-topic span {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      line-height: 1.5;
+    }
+
+    .contact-form-wrapper {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .contact-form-wrapper h2 {
+      margin: 0 0 10px;
+    }
+
+    .form-note {
+      margin-bottom: 24px;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    .contact-form {
+      display: grid;
+      gap: 18px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .form-group label {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    .form-group span.hint {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--bg);
+      padding: 13px 14px;
+      font-size: 0.95rem;
+      font-family: inherit;
+      color: var(--text);
+      outline: none;
+      width: 100%;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--accent2);
+      box-shadow: 0 0 0 1px var(--accent2);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 170px;
+      max-height: 260px;
+    }
+
+    .form-group.char-counter {
+      position: relative;
+    }
+
+    .char-counter-text {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-align: right;
+      margin-top: 2px;
+    }
+
+    .char-counter-text.warning {
+      color: var(--accent2);
+    }
+
+    .form-feedback {
+      padding: 12px 16px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      margin-bottom: 16px;
+      display: none;
+    }
+
+    .form-feedback.success {
+      background: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+      display: block;
+    }
+
+    .form-feedback.error {
+      background: #f8d7da;
+      color: #721c24;
+      border: 1px solid #f5c6cb;
+      display: block;
+    }
+
+    .contact-submit {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 14px 18px;
+      margin-top: 4px;
+    }
+
+    .contact-submit p {
+      flex: 1 1 260px;
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      line-height: 1.55;
+    }
+
+    .contact-extra {
+      max-width: 860px;
+      margin: 28px auto 0;
+      padding: 22px 24px;
+      border: 1px solid color-mix(in srgb, var(--accent) 24%, var(--border));
+      border-radius: 14px;
+      background: linear-gradient(135deg, rgba(110, 231, 183, 0.10), rgba(125, 211, 252, 0.06));
+    }
+
+    .contact-extra p {
+      margin: 0;
+      color: var(--text-muted);
+    }
+
+    @media (max-width: 900px) {
+      .contact-overview {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .article-container {
+        padding: 0 20px;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-topic-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .theme-toggle {
+        width: 100%;
+        max-width: 200px;
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .article-container {
+        padding: 0 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <a href="/" class="logo">
+          <span class="logo-icon">◐</span>
+          <span class="logo-text">QR Studio</span>
+        </a>
+      </div>
+      <div class="nav-menu" id="navMenu">
+        <a href="/#generator" class="nav-link">Generator</a>
+        <a href="/#types" class="nav-link">QR types</a>
+        <a href="/#faq" class="nav-link">Veelgestelde vragen</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="gratis-qr-code.html" class="nav-link">Waarom QR Studio?</a>
+        <a href="https://qrstudio.eu" target="_blank" rel="noopener noreferrer" class="language-switch"
+          aria-label="Switch to English version">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16">
+            <defs>
+              <clipPath id="a">
+                <rect width="12" height="16" fill="#fff" />
+              </clipPath>
+              <clipPath id="b">
+                <rect x="12" width="12" height="16" fill="#fff" />
+              </clipPath>
+            </defs>
+            <g clip-path="url(#a)">
+              <rect width="24" height="16" fill="#012169" />
+              <path stroke="#fff" stroke-width="3.2" d="M0 0L24 16M24 0L0 16" />
+              <path stroke="#C8102E" stroke-width="2" d="M0 0L24 16M24 0L0 16" />
+              <path stroke="#fff" stroke-width="4.8" d="M12 0v16M0 8h24" />
+              <path stroke="#C8102E" stroke-width="3.2" d="M12 0v16M0 8h24" />
+            </g>
+            <g clip-path="url(#b)">
+              <rect x="12" width="12" height="16" fill="#B22234" />
+              <path fill="#fff"
+                d="M12 0h12v1.23H12zm0 2.46h12v1.23H12zm0 2.46h12v1.23H12zm0 2.46h12v1.23H12zm0 2.46h12v1.23H12zm0 2.46h12v1.23H12z" />
+              <rect x="12" width="6" height="8.6" fill="#3C3B6E" />
+              <path fill="#fff"
+                d="m13.2 1.72.37.27-.14.44-.44-.14.21-.57zm1.2 0 .37.27-.14.44-.44-.14.21-.57zm1.2 0 .37.27-.14.44-.44-.14.21-.57zm1.2 0 .37.27-.14.44-.44-.14.21-.57zm-3 1.2.37.27-.14.44-.44-.14.21-.57zm1.2 0 .37.27-.14.44-.44-.14.21-.57zm1.2 0 .37.27-.14.44-.44-.14.21-.57zm-2.4 1.2.37.27-.14.44-.44-.14.21-.57zm1.2 0 .37.27-.14.44-.44-.14.21-.57zm1.2 0 .37.27-.14.44-.44-.14.21-.57zm-3 1.2.37.27-.14.44-.44-.14.21-.57zm1.2 0 .37.27-.14.44-.44-.14.21-.57zm1.2 0 .37.27-.14.44-.44-.14.21-.57z" />
+            </g>
+          </svg>
+        </a>
+        <button class="theme-toggle" aria-label="Wissel thema">
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title"><span class="gradient-text">Contact met QR Studio</span></h1>
+      <p class="hero-subtitle">
+        Heb je een vraag over onze gratis QR-code generator, het gebruik van QR-codes in jouw organisatie of wil je een
+        idee bespreken? Stuur ons een bericht via het formulier, wij reageren zo snel mogelijk.
+      </p>
+      <div class="hero-actions">
+        <a href="/#generator" class="btn btn-primary btn-large">Direct naar QR-code generator</a>
+        <a href="gratis-qr-code.html" class="btn btn-ghost btn-large">Lees meer over onze gratis service</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container article-container">
+      <section class="contact-card">
+        <div class="contact-overview">
+          <div class="contact-panel">
+            <h2>Waarvoor kun je contact opnemen?</h2>
+            <p>
+              QR Studio is bedoeld als eenvoudige, gratis QR-code generator. Heb je een vraag over de tool, een idee
+              voor praktisch gebruik of wil je iets melden dat niet goed werkt? Stuur ons gerust een bericht.
+            </p>
+          </div>
+
+          <div class="contact-panel">
+            <h3>Handig om te weten</h3>
+            <p>
+              Je gegevens worden alleen gebruikt om je bericht te beantwoorden. We gebruiken het contactformulier niet
+              voor nieuwsbrieven of automatische marketing.
+            </p>
+          </div>
+        </div>
+
+        <div class="contact-topic-grid" aria-label="Veel voorkomende contactredenen">
+          <div class="contact-topic">
+            <strong>Vraag over QR-codes</strong>
+            <span>Bijvoorbeeld over gebruik in print, events, horeca, onderwijs of zorg.</span>
+          </div>
+          <div class="contact-topic">
+            <strong>Feedback of bugmelding</strong>
+            <span>Laat het weten als iets op qrstudio.nl niet werkt zoals verwacht.</span>
+          </div>
+          <div class="contact-topic">
+            <strong>Privacy of veiligheid</strong>
+            <span>Vragen over statische QR-codes, tracking, opslag of AVG-vriendelijk gebruik.</span>
+          </div>
+          <div class="contact-topic">
+            <strong>AI en automatisering</strong>
+            <span>QR Studio is gebouwd door AI Personeelstraining als praktisch voorbeeld van slimme automatisering.</span>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper">
+          <h2>Stuur een bericht</h2>
+          <p class="form-note">
+            Houd je bericht kort en concreet. Dan kunnen we sneller reageren.
+          </p>
+
+          <!-- Formspree contactformulier -->
+          <div class="form-feedback" id="formFeedback"></div>
+
+          <form action="https://formspree.io/f/mzzodvep" method="POST" class="contact-form" id="contactForm">
+            <input type="hidden" name="_subject" value="Nieuw bericht via contactformulier QR Studio">
+            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="naam">Naam <span style="color: var(--accent2)">*</span></label>
+                <input type="text" id="naam" name="naam" required autocomplete="name">
+              </div>
+              <div class="form-group">
+                <label for="email">E-mailadres <span style="color: var(--accent2)">*</span></label>
+                <input type="email" id="email" name="email" required autocomplete="email"
+                  placeholder="naam@organisatie.nl">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="bedrijf">Bedrijf</label>
+                <input type="text" id="bedrijf" name="bedrijf" autocomplete="organization" placeholder="Optioneel">
+              </div>
+              <div class="form-group">
+                <label for="onderwerp">Onderwerp</label>
+                <select id="onderwerp" name="onderwerp">
+                  <option value="Vraag over QR Studio">Vraag over QR Studio</option>
+                  <option value="Bugmelding of feedback">Bugmelding of feedback</option>
+                  <option value="QR-codes zakelijk gebruiken">QR-codes zakelijk gebruiken</option>
+                  <option value="AI-training of automatisering">AI-training of automatisering</option>
+                  <option value="Anders">Anders</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group char-counter">
+              <label for="vraag">Bericht <span style="color: var(--accent2)">*</span></label>
+              <textarea id="vraag" name="bericht" maxlength="700" required
+                placeholder="Waar kunnen we je mee helpen?"></textarea>
+              <div class="char-counter-text"><span id="charCount">0</span>/700</div>
+            </div>
+
+            <div class="contact-submit">
+              <button type="submit" class="btn btn-primary btn-large">Verstuur bericht</button>
+              <p>We gebruiken je gegevens alleen om te reageren. Lees ook onze <a href="privacy.html">privacyinformatie</a>.</p>
+            </div>
+          </form>
+        </div>
+
+        <div class="contact-extra">
+          <p>
+            QR Studio is een gratis dienst van <a href="https://www.aipersoneelstraining.nl" target="_blank"
+              rel="noopener noreferrer">AI Personeelstraining</a>. Wil je meer weten over AI-trainingen,
+            AI-geletterdheid of het ontwikkelen van eigen AI-tools en workflows binnen jouw organisatie, kijk dan op de
+            website van AI Personeelstraining of vermeld dit in je bericht.
+          </p>
+        </div>
+      </section>
+    </div>
+    <div class="container">
+      <p>Zoek je eerst praktische uitleg? De <a href="blog.html">QR Studio blog</a> bundelt de belangrijkste handleidingen en voorbeelden.</p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo-icon">◐</span>
+          <span class="logo-text">QR Studio</span>
+        </div>
+        <div class="footer-links">
+          <a href="privacy.html">Privacy</a>
+          <a href="voorwaarden.html">Voorwaarden</a>
+          <a href="contact.html">Contact</a>
+          <a href="https://nl.linkedin.com/company/ai-personeelstraining" target="_blank" rel="noopener noreferrer"
+            aria-label="LinkedIn profiel van AI Personeelstraining">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <rect width="24" height="24" rx="1.5" fill="#0A66C2" />
+              <path fill="white"
+                d="M8 19H5v-9h3v9zM6.5 8.25A1.75 1.75 0 1 1 8.25 6.5 1.75 1.75 0 0 1 6.5 8.25zM19 19h-3v-4.75c0-1.4-1.2-2.5-2.5-2.5S11 12.85 11 14.25V19h-3v-9h2.9v1.3a3.11 3.11 0 0 1 2.6-1.4c2.5 0 4.5 2.2 4.5 5.15z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 QR Studio - Gratis QR-code generator op <a href="https://qrstudio.nl">qrstudio.nl</a> door
+          <a href="https://www.aipersoneelstraining.nl" target="_blank" rel="noopener noreferrer">AI
+            Personeelstraining</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+  <script>
+    // Character counter for textarea
+    const textarea = document.getElementById('vraag');
+    const charCount = document.getElementById('charCount');
+    const charCounterText = document.querySelector('.char-counter-text');
+
+    textarea.addEventListener('input', function () {
+      const count = this.value.length;
+      charCount.textContent = count;
+
+      if (count > 560) {
+        charCounterText.classList.add('warning');
+      } else {
+        charCounterText.classList.remove('warning');
+      }
+    });
+
+    // Form submission handler
+    const contactForm = document.getElementById('contactForm');
+    const formFeedback = document.getElementById('formFeedback');
+
+    contactForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const formData = new FormData(this);
+
+      fetch(this.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      })
+        .then(response => {
+          if (response.ok) {
+            formFeedback.classList.remove('error');
+            formFeedback.classList.add('success');
+            formFeedback.textContent = 'Bedankt voor je bericht! We nemen zo snel mogelijk contact met je op.';
+            contactForm.reset();
+            charCount.textContent = '0';
+            charCounterText.classList.remove('warning');
+            window.scrollTo({ top: formFeedback.offsetTop - 100, behavior: 'smooth' });
+          } else {
+            throw new Error('Formulier kon niet worden verzonden');
+          }
+        })
+        .catch(error => {
+          formFeedback.classList.remove('success');
+          formFeedback.classList.add('error');
+          formFeedback.textContent = 'Er is iets fout gegaan. Probeer het later opnieuw of stuur een e-mail naar contact@qrstudio.nl';
+          window.scrollTo({ top: formFeedback.offsetTop - 100, behavior: 'smooth' });
+        });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QVTWR6W7HC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-QVTWR6W7HC');
+  </script>
+  <title>QR-code resultaat | QR Studio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bekijk en download je gratis QR-code als PNG. QR Studio - de eenvoudigste manier om een QR-code te maken.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://qrstudio.nl/generator.html">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body{font-family:Inter,sans-serif;background:#0b0e14;color:#e7ecf4;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;text-align:center;margin:0;padding:20px}
+    #qrcode{margin:30px;background:#fff;padding:16px;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.4)}
+    button{background:linear-gradient(135deg,#6ee7b7,#7dd3fc);border:none;padding:10px 18px;border-radius:10px;font-weight:700;cursor:pointer;margin:8px;color:#001219;box-shadow:0 4px 12px rgba(14,165,233,.25)}
+    button:hover{opacity:.9}
+    a{color:#7dd3fc;text-decoration:none;font-size:14px}
+    .disclaimer-footer {
+      max-width: 860px;
+      margin: 40px auto 24px;
+      padding: 20px;
+      font-size: 13px;
+      text-align: center;
+      border-top: 1px solid #1c2230; /* var(--border) */
+    }
+  </style>
+</head>
+<body>
+  <h1>Jouw QR-code</h1>
+  <div id="qrcode"></div>
+
+  <div>
+    <button id="downloadBtn">Download PNG</button>
+    <button onclick="window.history.back()">← Terug</button>
+  </div>
+
+  <p style="margin-top:20px;"><a href="index.html">Nieuwe QR-code maken</a></p>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const data = params.get('data') || '';
+    const type = params.get('type') || 'Website';
+    document.querySelector('h1').textContent = `QR-code voor ${type}`;
+    const qrContainer = document.getElementById('qrcode');
+    new QRCode(qrContainer,{ text:data, width:240, height:240, colorDark:"#000000", colorLight:"#ffffff", correctLevel:QRCode.CorrectLevel.H });
+
+    document.getElementById('downloadBtn').addEventListener('click',()=>{
+      const canvas = qrContainer.querySelector('canvas');
+      const img = qrContainer.querySelector('img');
+      if(canvas){
+        const a=document.createElement('a'); a.download='qr-code.png'; a.href=canvas.toDataURL('image/png'); a.click();
+      }else if(img){
+        const a=document.createElement('a'); a.download='qr-code.png'; a.href=img.src; a.click();
+      }else{
+        alert('QR-code niet gevonden.');
+      }
+    });
+  </script>
+  <script src="breadcrumb-schema.ts" defer></script>
+  <footer class="disclaimer-footer">
+     <p style="margin-bottom: 1em;">© 2026 QR Studio — gratis QR-code generator op <a href="https://qrstudio.nl" style="color:#7dd3fc;">qrstudio.nl</a> door <a href="https://www.aipersoneelstraining.nl" target="_blank" rel="noopener noreferrer" style="color:#7dd3fc;">AI Personeelstraining</a></p>
+    <p>
+      <strong>Disclaimer:</strong> Het aanmaken en gebruiken van QR-codes via deze website is volledig voor eigen risico van de gebruiker. QR Studio aanvaardt geen enkele aansprakelijkheid voor enige directe, indirecte of gevolgschade die voortvloeit uit het gebruik of misbruik van de gegenereerde QR-codes. Gebruikers zijn zelf uitsluitend verantwoordelijk voor het verifiëren van de veiligheid, nauwkeurigheid en bestemming van elke QR-code die zij aanmaken of scannen. Gegenereerde QR-codes mogen uitsluitend worden gebruikt voor wettige, ethische en legitieme doeleinden in overeenstemming met de Nederlandse en Europese wetgeving, inclusief regelgeving op het gebied van gegevensbescherming en intellectueel eigendom. Door gebruik te maken van deze website, stemt u ermee in dat QR Studio niet verantwoordelijk kan worden gehouden voor de inhoud, websites of diensten van derden waarnaar een QR-code kan verwijzen.
+    </p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,596 @@
+
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QVTWR6W7HC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-QVTWR6W7HC');
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gratis QR-code maken | QR Studio</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Maak eenvoudig en gratis QR-codes voor URL, telefoon, SMS, e-mail, WhatsApp, FaceTime, Wi-Fi, locatie, vCard en evenement. Direct downloaden als PNG.">
+  <meta name="keywords" content="gratis QR-code maken, gratis QR-code generator, QR-code gratis, QR-code generator, QR code aanmaken">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://qrstudio.nl/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Gratis QR-code maken | QR Studio">
+  <meta property="og:description" content="Maak gratis QR-codes voor URL, Wi-Fi, tekst, contact en meer. Download als PNG.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://qrstudio.nl/">
+  <meta property="og:image" content="https://qrstudio.nl/og-image.png">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- QR-infographic styles (gescope'd) -->
+  <style>
+    /* QR Studio – compacte infographic (gescope'd) */
+    .qr-infographic {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 720px;
+      margin: 0 auto 2rem;
+      background: #ffffff;
+      border-radius: 10px;
+      border: 1px solid #e3e7ef;
+      box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
+      padding: 1.5rem 1.5rem 1.25rem;
+      color: #1f2933;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .qr-infographic__header {
+      text-align: left;
+      margin-bottom: 1.25rem;
+    }
+
+    .qr-infographic__title {
+      margin: 0 0 0.25rem;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #111827;
+    }
+
+    .qr-infographic__subtitle {
+      margin: 0;
+      font-size: 0.95rem;
+      color: #6b7280;
+    }
+
+    /* Secties */
+    .qr-infographic__section {
+      padding: 0.85rem 0;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    .qr-infographic__section:first-of-type {
+      border-top: none;
+    }
+
+    .qr-infographic__section-title {
+      display: flex;
+      align-items: center;
+      margin: 0 0 0.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #0052cc;
+    }
+
+    .qr-infographic__section-title-icon {
+      font-size: 1.2rem;
+      margin-right: 0.5rem;
+    }
+
+    /* Grids */
+    .qr-infographic__grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.5rem;
+    }
+
+    .qr-infographic__grid-item {
+      background: #f9fafb;
+      border-radius: 6px;
+      padding: 0.6rem 0.7rem;
+      text-align: left;
+      border: 1px solid #e5e7eb;
+      font-size: 0.9rem;
+    }
+
+    .qr-infographic__grid-icon {
+      font-size: 1.1rem;
+      margin-right: 0.35rem;
+    }
+
+    /* Stappen – correct genummerd 1 t/m 4 */
+    .qr-infographic__steps {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      counter-reset: step-counter 0;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .qr-infographic__step {
+      position: relative;
+      flex: 1 1 calc(25% - 0.5rem);
+      min-width: 130px;
+      background: #eff6ff;
+      border-radius: 6px;
+      border: 1px solid #bfdbfe;
+      padding: 0.75rem 0.6rem 0.6rem 1.9rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .qr-infographic__step::before {
+      content: counter(step-counter);
+      counter-increment: step-counter;
+      position: absolute;
+      left: 0.55rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 20px;
+      border-radius: 999px;
+      background: #0052cc;
+      color: #ffffff;
+      font-size: 0.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+    }
+
+    /* Praktische tips – 2 kolommen */
+    .qr-infographic__grid--tips {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    /* Responsief */
+    @media (max-width: 768px) {
+      .qr-infographic {
+        padding: 1.25rem 1rem 1rem;
+      }
+      .qr-infographic__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .qr-infographic__steps {
+        flex-direction: column;
+      }
+      .qr-infographic__step {
+        min-width: 0;
+        flex-basis: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="nav-brand">
+      <a href="/" class="logo">
+        <span class="logo-icon">◐</span>
+        <span class="logo-text">QR Studio</span>
+      </a>
+    </div>
+
+    <div class="nav-menu" id="navMenu">
+      <a href="/#generator" class="nav-link">Generator</a>
+      <a href="/#types" class="nav-link">QR types</a>
+      <a href="/#faq" class="nav-link">Veelgestelde vragen</a>
+      <a href="blog.html" class="nav-link">Blog</a>
+      <a href="gratis-qr-code.html" class="nav-link">Waarom QR Studio?</a>
+
+      <a href="https://qrstudio.eu" target="_blank" rel="noopener noreferrer" class="language-switch" aria-label="Switch to English version">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16">
+          <defs>
+            <clipPath id="a"><rect width="12" height="16" fill="#fff"/></clipPath>
+            <clipPath id="b"><rect x="12" width="12" height="16" fill="#fff"/></clipPath>
+          </defs>
+          <g clip-path="url(#a)">
+            <rect width="24" height="16" fill="#012169"/>
+            <path stroke="#fff" stroke-width="3.2" d="M0 0L24 16M24 0L0 16"/>
+            <path stroke="#C8102E" stroke-width="2" d="M0 0L24 16M24 0L0 16"/>
+            <path stroke="#fff" stroke-width="4.8" d="M12 0v16M0 8h24"/>
+            <path stroke="#C8102E" stroke-width="3.2" d="M12 0v16M0 8h24"/>
+          </g>
+          <g clip-path="url(#b)">
+            <rect x="12" width="12" height="16" fill="#B22234"/>
+            <path fill="#fff" d="M12 0h12v1.23H12zm0 2.46h12v1.23H12zm0 2.46h12v1.23H12zm0 2.46h12v1.23H12zm0 2.46h12v1.23H12zm0 2.46h12v1.23H12z"/>
+            <rect x="12" width="6" height="8.6" fill="#3C3B6E"/>
+            <path fill="#fff" d="m13.2 1.72.37.27-.14.44-.44-.14.21-.57zm1.2 0 .37.27-.14.44-.44-.14.21-.57zm1.2 0 .37.27-.14.44-.44-.14.21-.57zm1.2 0 .37.27-.14.44-.44-.14.21-.57zm-3 1.2.37.27-.14.44-.44-.14.21-.57zm1.2 0 .37.27-.14.44-.44-.14.21-.57zm1.2 0 .37.27-.14.44-.44-.14.21-.57zm-2.4 1.2.37.27-.14.44-.44-.14.21-.57zm1.2 0 .37.27-.14.44-.44-.14.21-.57zm1.2 0 .37.27-.14.44-.44-.14.21-.57zm-3 1.2.37.27-.14.44-.44-.14.21-.57zm1.2 0 .37.27-.14.44-.44-.14.21-.57zm1.2 0 .37.27-.14.44-.44-.14.21-.57z"/>
+          </g>
+        </svg>
+      </a>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Wissel thema">
+        <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span class="gradient-text">Gratis QR-codes maken</span>
+      </h1>
+      <p class="hero-subtitle">
+        Genereer direct professionele QR-codes voor al je doeleinden. 
+        <b>100% gratis</b>Geen registratie nodig, altijd werkend.
+      </p>
+      <div class="hero-actions">
+        <a href="#generator" class="btn btn-primary btn-large">
+          Start direct →
+        </a>
+        <a href="#types" class="btn btn-ghost btn-large">
+          Bekijk mogelijkheden
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="generator" class="main-content">
+    <div class="container">
+      <div class="card main-card">
+        <!-- Type selector -->
+        <div class="toolbar" id="typebar" role="tablist" aria-label="QR-type">
+          <button class="btn-type active" data-type="text">¶ Tekst</button>
+          <button class="btn-type" data-type="url">🔗 URL</button>
+          <button class="btn-type" data-type="phone">📞 Telefoon</button>
+          <button class="btn-type" data-type="sms">💬 SMS</button>
+          <button class="btn-type" data-type="email">✉️ E-mail</button>
+          <button class="btn-type" data-type="whatsapp">🟢 WhatsApp</button>
+          <button class="btn-type" data-type="facetime">🎧 FaceTime</button>
+          <button class="btn-type" data-type="location">📍 Locatie</button>
+          <button class="btn-type" data-type="wifi">📶 WiFi</button>
+          <button class="btn-type" data-type="event">🗓️ Evenement</button>
+          <button class="btn-type" data-type="crypto">◦ Crypto</button>
+          <button class="btn-type" data-type="vcard">🏪 vCard</button>
+        </div>
+
+        <!-- Dynamic form -->
+        <form id="qrForm" action="generator.html" method="get">
+          <input type="hidden" name="type" id="typeField" value="Text">
+          <input type="hidden" name="data" id="dataField">
+
+          <div id="fields"></div>
+
+          <div class="form-actions">
+            <button type="button" class="btn btn-ghost" id="resetBtn">Reset</button>
+            <button type="submit" class="btn btn-primary">Genereer QR-code</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- QR Types Section -->
+  <section id="types" class="section-types">
+    <div class="container">
+      <h2 class="section-title">Voorbeelden van QR mogelijkheden</h2>
+      <div class="types-grid">
+        <div class="type-card">
+          <div class="type-icon">🔗</div>
+          <h3>Website URL</h3>
+          <p>Link direct naar elke website of webpagina</p>
+        </div>
+        <div class="type-card">
+          <div class="type-icon">📞</div>
+          <h3>Telefoon</h3>
+          <p>Direct bellen met één scan</p>
+        </div>
+        <div class="type-card">
+          <div class="type-icon">📶</div>
+          <h3>WiFi</h3>
+          <p>Automatisch verbinden met je netwerk</p>
+        </div>
+        <div class="type-card">
+          <div class="type-icon">🏪</div>
+          <h3>vCard</h3>
+          <p>Deel contactgegevens professioneel</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="section-faq">
+    <div class="container">
+
+      <!-- QR-infographic boven Veelgestelde vragen -->
+      <div class="qr-infographic">
+        <div class="qr-infographic__header">
+          <h2 class="qr-infographic__title">Gratis QR-code maken in 4 stappen</h2>
+          <p class="qr-infographic__subtitle">In één blik duidelijk hoe je gratis een QR-code maakt met QR Studio.</p>
+        </div>
+
+        <div class="qr-infographic__section">
+          <h3 class="qr-infographic__section-title">
+            <span class="qr-infographic__section-title-icon">📱</span>
+            Wat is een QR-code?
+          </h3>
+          <p style="margin:0;">
+            Een QR-code is een 2D-barcode die je met een smartphone scant om direct een actie uit te voeren, zoals een website openen,
+            verbinden met wifi of contactgegevens opslaan.
+          </p>
+        </div>
+
+        <div class="qr-infographic__section">
+          <h3 class="qr-infographic__section-title">
+            <span class="qr-infographic__section-title-icon">🧩</span>
+            Welke soorten?
+          </h3>
+          <div class="qr-infographic__grid">
+            <div class="qr-infographic__grid-item">
+              <span class="qr-infographic__grid-icon">🔗</span>URL / website
+            </div>
+            <div class="qr-infographic__grid-item">
+              <span class="qr-infographic__grid-icon">📶</span>wifi-toegang
+            </div>
+            <div class="qr-infographic__grid-item">
+              <span class="qr-infographic__grid-icon">👤</span>vCard (contact)
+            </div>
+            <div class="qr-infographic__grid-item">
+              <span class="qr-infographic__grid-icon">💬</span>telefoon / SMS
+            </div>
+            <div class="qr-infographic__grid-item">
+              <span class="qr-infographic__grid-icon">📧</span>e-mail
+            </div>
+            <div class="qr-infographic__grid-item">
+              <span class="qr-infographic__grid-icon">📄</span>platte tekst
+            </div>
+          </div>
+        </div>
+
+        <div class="qr-infographic__section">
+          <h3 class="qr-infographic__section-title">
+            <span class="qr-infographic__section-title-icon">⚙️</span>
+            Zo werkt het
+          </h3>
+          <ul class="qr-infographic__steps">
+            <li class="qr-infographic__step">Kies het type QR-code.</li>
+            <li class="qr-infographic__step">Vul de gegevens zorgvuldig in.</li>
+            <li class="qr-infographic__step">Genereer en download de PNG.</li>
+            <li class="qr-infographic__step">Gebruik de code in print of online.</li>
+          </ul>
+        </div>
+
+        <div class="qr-infographic__section">
+          <h3 class="qr-infographic__section-title">
+            <span class="qr-infographic__section-title-icon">✅</span>
+            Gratis & zonder zorgen
+          </h3>
+          <div class="qr-infographic__grid">
+            <div class="qr-infographic__grid-item">
+              <span class="qr-infographic__grid-icon">🚫</span>geen account nodig
+            </div>
+            <div class="qr-infographic__grid-item">
+              <span class="qr-infographic__grid-icon">🔒</span>geen data-opslag
+            </div>
+            <div class="qr-infographic__grid-item">
+              <span class="qr-infographic__grid-icon">🔄</span>onbeperkt gebruik
+            </div>
+            <div class="qr-infographic__grid-item">
+              <span class="qr-infographic__grid-icon">⏳</span>geen verloopdatum
+            </div>
+          </div>
+        </div>
+
+        <div class="qr-infographic__section">
+          <h3 class="qr-infographic__section-title">
+            <span class="qr-infographic__section-title-icon">💡</span>
+            Praktische tips voor drukwerk & mobiel
+          </h3>
+          <div class="qr-infographic__grid qr-infographic__grid--tips">
+            <div class="qr-infographic__grid-item">
+              <span class="qr-infographic__grid-icon">📏</span>
+              <strong>Formaat:</strong> minimaal 2×2 cm voor flyers en visitekaartjes; kies groter voor posters.
+            </div>
+            <div class="qr-infographic__grid-item">
+              <span class="qr-infographic__grid-icon">📱</span>
+              <strong>Testen:</strong> scan altijd even met meerdere telefoons (iOS én Android) voordat je gaat drukken.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- einde infographic -->
+
+      <h2 class="section-title">Veelgestelde vragen</h2>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>
+            <strong>Blijven de QR-codes altijd werken?</strong>
+          </h3>
+          <p>Ja, alle gegenereerde QR-codes blijven permanent werken. We gebruiken geen tracking of redirects.</p>
+        </div>
+        <div class="faq-item">
+          <h3>
+            <strong>Moet ik betalen of registreren?</strong>
+          </h3>
+          <p>Nee, onze service is <a href="echt-gratis-qr-code.html">volledig gratis</a> en vereist geen registratie of account.</p>
+        </div>
+        <div class="faq-item">
+          <h3>
+            <strong>Kan ik de QR-codes commercieel gebruiken?</strong>
+          </h3>
+          <p>Absoluut! Je bent vrij om de codes te gebruiken voor elk legitiem doel, zakelijk of persoonlijk.</p>
+        </div>
+        <div class="faq-item">
+          <h3>
+            <strong>In welke formaten kan ik downloaden?</strong>
+          </h3>
+          <p>Momenteel bieden we PNG-formaat aan in hoge resolutie, perfect voor print en digitaal gebruik.</p>
+        </div>
+        <div class="faq-item">
+          <h3>
+            <strong>Hoe maak ik gratis een QR-code met QR Studio?</strong>
+          </h3>
+          <p>Kies een type, voer je gegevens in en klik op 'Genereer'. Je kunt je QR-code direct downloaden als PNG-bestand, zonder registratie.</p>
+        </div>
+        <div class="faq-item">
+          <h3>
+            <strong>Is QR Studio veilig te gebruiken?</strong>
+          </h3>
+          <p>Ja, alle QR-codes worden lokaal in je browser gemaakt. Er wordt geen data opgeslagen of gedeeld, waardoor je volledige privacy behoudt.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEO Structured Data (Rich Snippet) -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "name": "QR Studio",
+          "url": "https://www.qrstudio.nl",
+          "logo": "https://www.qrstudio.nl/og-image.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "AI Personeelstraining",
+            "url": "https://aipersoneelstraining.nl",
+            "sameAs": [
+              "https://nl.linkedin.com/company/ai-personeelstraining"
+            ],
+            "founder": {
+              "@type": "Person",
+              "name": "Barry van der Laan MBA"
+            }
+          }
+        },
+        {
+          "@type": "WebSite",
+          "url": "https://www.qrstudio.nl",
+          "name": "QR Studio",
+          "publisher": {
+            "@type": "Organization",
+            "name": "QR Studio"
+          },
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.qrstudio.nl/"
+          },
+          "inLanguage": "nl-NL",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.qrstudio.nl/#generator?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.qrstudio.nl/",
+          "url": "https://www.qrstudio.nl/",
+          "name": "Gratis QR-code maken | QR Studio",
+          "description": "Maak eenvoudig en gratis QR-codes voor URL, telefoon, SMS, e-mail, WhatsApp, FaceTime, Wi-Fi, locatie, vCard en evenement. Direct downloaden als PNG.",
+          "isPartOf": { "@id": "https://www.qrstudio.nl/#website" }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Blijven de QR-codes altijd werken?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja, alle gegenereerde QR-codes blijven permanent werken. We gebruiken geen tracking, redirects of vervaldatums."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Moet ik betalen of registreren?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Nee, onze service is volledig gratis en vereist geen registratie of account."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  </script> 
+
+  <!-- Hulpsectie: QR leren gebruiken -->
+  <section class="section-helpful-links">
+    <div class="container">
+      <h2 class="section-title">Meer over QR-codes</h2>
+      <ul class="helpful-links">
+        <li><a href="hoe-qr-code-scannen-met-iphone.html">Hoe QR-code scannen met iPhone</a></li>
+        <li><a href="qr-code-scannen-met-android.html">Hoe QR-code scannen met Android</a></li>
+        <li><a href="hoe-qr-code-scannen-met-samsung.html">Hoe QR-code scannen met Samsung</a></li>
+        <li><a href="qr-code-maken-op-mobiel.html">Kan je een QR-code maken op je mobiel?</a></li>
+        <li><a href="hoe-qr-code-maken.html">Hoe maak je een QR-code?</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo-icon">◐</span>
+          <span class="logo-text">QR Studio</span>
+        </div>
+        <div class="footer-links">
+          <a href="privacy.html">Privacy</a>
+          <a href="voorwaarden.html">Voorwaarden</a>
+          <a href="sitemap.html">Sitemap</a>
+          <a href="contact.html">Contact</a>
+          <a href="https://nl.linkedin.com/company/ai-personeelstraining" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profiel van AI Personeelstraining">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect width="24" height="24" rx="1.5" fill="#0A66C2"/><path fill="white" d="M8 19H5v-9h3v9zM6.5 8.25A1.75 1.75 0 1 1 8.25 6.5 1.75 1.75 0 0 1 6.5 8.25zM19 19h-3v-4.75c0-1.4-1.2-2.5-2.5-2.5S11 12.85 11 14.25V19h-3v-9h2.9v1.3a3.11 3.11 0 0 1 2.6-1.4c2.5 0 4.5 2.2 4.5 5.15z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 QR Studio — Gratis QR-code generator op <a href="https://www.qrstudio.nl">www.qrstudio.nl</a> door <a href="https://www.aipersoneelstraining.nl" target="_blank" rel="noopener noreferrer">AI Personeelstraining</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="breadcrumb-schema.ts" defer></script>
+  <script src="app.js"></script>
+</body>
+</html>

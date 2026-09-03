@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QVTWR6W7HC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-QVTWR6W7HC');
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>AI kan meer bouwen dan alleen QR-codes | QR Studio</title>
+    <meta name="description"
+        content="QR Studio is één klein voorbeeld van wat je met AI kunt bouwen. Hier is een groter voorbeeld: Pharaoh Archive, een complete chronologie van de Egyptische farao's, gebouwd met dezelfde aanpak.">
+    <meta name="keywords"
+        content="AI project voorbeeld, wat kan je met AI bouwen, AI website bouwen, gratis AI tool, QR Studio AI">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://qrstudio.nl/ai-meer-dan-alleen-qr-codes.html">
+    <link rel="alternate" hreflang="en" href="https://qrstudio.eu/blog/ai-can-build-more-than-qr-codes.html">
+    <link rel="alternate" hreflang="nl" href="https://qrstudio.nl/ai-meer-dan-alleen-qr-codes.html">
+    <link rel="alternate" hreflang="x-default" href="https://qrstudio.eu/blog/ai-can-build-more-than-qr-codes.html">
+
+    <meta property="og:title" content="AI kan meer bouwen dan alleen QR-codes | QR Studio">
+    <meta property="og:description"
+        content="QR Studio is één klein voorbeeld van wat je met AI kunt bouwen. Ontdek Pharaoh Archive, een compleet overzicht van de Egyptische farao's, gebouwd met AI.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://qrstudio.nl/ai-meer-dan-alleen-qr-codes.html">
+    <meta property="og:image" content="https://qrstudio.nl/og-image.png">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .article-container { max-width: 800px; margin: 0 auto; padding: 0 24px; }
+        .article-container h1, .article-container h2, .article-container h3,
+        .article-container p, .article-container ul, .article-container ol, .article-container li { text-align: left; }
+        .article-container p { margin-bottom: 28px; line-height: 1.75; }
+        .article-container h2 { margin-top: 56px; margin-bottom: 28px; font-size: 1.75rem; font-weight: 600; }
+        .article-container h3 { margin-top: 40px; margin-bottom: 20px; font-size: 1.3rem; font-weight: 600; }
+        .article-container ul, .article-container ol { margin-bottom: 28px; padding-left: 28px; }
+        .article-container li { margin-bottom: 12px; line-height: 1.7; }
+        .article-container p strong { font-weight: 600; color: var(--text); }
+        hr { margin: 48px 0; border: none; border-top: 1px solid var(--border); }
+
+        .qr-callout { display: grid; grid-template-columns: 168px 1fr; gap: 24px; align-items: center; margin: 40px 0; padding: 24px; border: 1px solid var(--border); border-radius: 16px; background: var(--bg-secondary); box-shadow: var(--shadow); }
+        .qr-callout img { width: 168px; height: 168px; border-radius: 12px; background: #fff; padding: 10px; display: block; }
+        .qr-callout h3 { margin: 0 0 8px; font-size: 1.2rem; }
+        .qr-callout p { margin: 0 0 14px; }
+        .qr-callout .btn { margin: 0; }
+        .article-container .article-hero-image { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 16px; margin: 0 0 8px; display: block; box-shadow: var(--shadow); }
+        @media (max-width: 620px) { .qr-callout { grid-template-columns: 1fr; justify-items: center; text-align: center; } }
+
+        .author-section { margin: 32px 0; padding: 24px; background: var(--bg-secondary); border-radius: 12px; border: 1px solid var(--border); }
+        .author-info p { margin-bottom: 0; color: var(--text-muted); font-size: 15px; text-align: center; }
+        .author-info a { color: var(--accent2); font-weight: 500; }
+        .author-info a:hover { opacity: 0.8; }
+
+        .share-article { margin: 48px 0; padding: 24px; border: 1px solid var(--border); border-radius: 12px; background: var(--bg-secondary); text-align: center; }
+        .share-buttons { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 16px; }
+        .share-buttons a, .share-buttons button { padding: 10px 16px; background: var(--bg); border: 1px solid var(--border); border-radius: 6px; color: var(--text); text-decoration: none; font-size: 15px; cursor: pointer; }
+        .share-buttons button { background: none; border: 1px solid var(--border); }
+        .share-buttons a:hover, .share-buttons button:hover { background: var(--accent2); color: #fff; transition: background 0.3s ease; }
+
+        @media (max-width: 768px) {
+            .article-container { padding: 0 20px; }
+            .article-container p { margin-bottom: 24px; }
+            .article-container h2 { margin-top: 48px; margin-bottom: 24px; font-size: 1.5rem; }
+            .article-container h3 { margin-top: 32px; margin-bottom: 16px; font-size: 1.2rem; }
+        }
+        @media (max-width: 480px) {
+            .article-container { padding: 0 16px; }
+            .article-container ul, .article-container ol { padding-left: 20px; }
+        }
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Is Pharaoh Archive echt met AI gebouwd?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja. Net als QR Studio is de website met moderne AI-tools ontworpen en gebouwd, en daarna door een mens gecontroleerd en bijgeschaafd. De AI zorgt voor structuur en snelheid, de mens voor juistheid en bruikbaarheid."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Wat heeft dit met QR-codes te maken?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "QR Studio en Pharaoh Archive komen uit hetzelfde idee: bouw iets kleins, nuttigs en gratis in plaats van alleen te praten over wat AI kan. De een is een QR-generator, de ander een geschiedenisbron."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Is Pharaoh Archive gratis te gebruiken?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, het is gratis en privacyvriendelijk, zonder account, net als QR Studio."
+        }
+      }]
+    }
+    </script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="/" class="logo">
+                    <span class="logo-icon">◐</span>
+                    <span class="logo-text">QR Studio</span>
+                </a>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="/#generator" class="nav-link">Generator</a>
+                <a href="/#types" class="nav-link">QR types</a>
+                <a href="/#faq" class="nav-link">Veelgestelde vragen</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="gratis-qr-code-maken.html" class="nav-link">Waarom QR Studio?</a>
+                <a href="https://qrstudio.eu" target="_blank" rel="noopener noreferrer" class="language-switch" aria-label="Switch to English version">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16"><rect width="24" height="16" fill="#012169" /><path stroke="#fff" stroke-width="3.2" d="M0 0L24 16M24 0L0 16" /><path stroke="#C8102E" stroke-width="2" d="M0 0L24 16M24 0L0 16" /><path stroke="#fff" stroke-width="4.8" d="M12 0v16M0 8h24" /><path stroke="#C8102E" stroke-width="3.2" d="M12 0v16M0 8h24" /></svg>
+                </a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title"><span class="gradient-text">AI kan meer bouwen dan alleen QR-codes</span></h1>
+            <p class="hero-subtitle">
+                QR Studio laat in het klein zien wat moderne AI-tools mogelijk maken. Pharaoh Archive laat het in het groot zien, gebouwd met precies dezelfde aanpak.
+            </p>
+            <div class="hero-actions">
+                <a href="/#generator" class="btn btn-primary btn-large">Maak nu je code</a>
+                <a href="#verhaal" class="btn btn-ghost btn-large">Lees het verhaal</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container article-container" id="verhaal">
+
+            <img src="https://pharaoharchive.com/images/pharaoh-ruler-gallery.webp" alt="Een galerij van oude Egyptische farao's uit Pharaoh Archive" class="article-hero-image" loading="eager">
+
+            <h2>Hetzelfde idee, een groter canvas</h2>
+            <p>
+                QR Studio bestaat om één klein punt te bewijzen: een nuttige tool kan snel, gratis en zonder trucs zijn. Geen
+                account, geen abonnement, geen code die stopt met werken zodra een proefperiode afloopt. Het is gebouwd met
+                moderne AI-tools door <a href="https://www.aipersoneelstraining.nl" target="_blank" rel="noopener noreferrer">AI
+                Personeelstraining</a>, een bedrijf dat mensen leert werken met AI.
+            </p>
+            <p>
+                Het interessante gebeurt wanneer je diezelfde aanpak op een groter probleem richt. AI haalt niet alleen een
+                paar klikken weg bij een herhaalde taak. Het stelt een heel klein team, of zelfs één persoon, in staat om iets
+                te publiceren waar vroeger een compleet studio voor nodig was.
+            </p>
+
+            <h2>Maak kennis met Pharaoh Archive</h2>
+            <p>
+                Pharaoh Archive is een doorzoekbare chronologie van meer dan 200 Egyptische heersers, van de eerste dynastie
+                tot de Ptolemeïsche periode. Het is geordend op tijdperk en dynastie, met achter elke naam een
+                encyclopedie-pagina en een interactieve tijdlijn die je met een schuifknop kunt verkennen om de prestaties van
+                elke dynastie te zien verschijnen.
+            </p>
+            <p>
+                Het begon als een simpele ergernis: er was geen enkele, goed vormgegeven plek waar je alle dynastieën en
+                heersers in één oogopslag kon zien. Dus is het gebouwd, met AI, op dezelfde manier als QR Studio: verzamel het
+                materiaal, structureer het en presenteer het helder. Het is gratis, privacyvriendelijk en vereist geen account.
+            </p>
+
+            <div class="qr-callout">
+                <img src="/images/pharaoharchive-qr.png" alt="QR-code naar pharaoharchive.com" width="168" height="168" loading="lazy">
+                <div>
+                    <h3>Bekijk het zelf</h3>
+                    <p>Scan de code, of open <a href="https://pharaoharchive.com" target="_blank" rel="noopener">pharaoharchive.com</a> direct.</p>
+                    <a href="https://pharaoharchive.com" target="_blank" rel="noopener" class="btn btn-primary">Bezoek Pharaoh Archive</a>
+                </div>
+            </div>
+
+            <h2>Waarom dit relevant is voor jouw werk</h2>
+            <p>
+                De les is niet "geschiedenis is interessant", al is dat zo. De les is dat de afstand tussen een idee en een af,
+                geloofwaardig product kleiner is geworden. Onderzoek, structuur, ontwerp en publicatie die vroeger maanden en
+                een budget kostten, kunnen nu door een klein team dat met AI weet te werken.
+            </p>
+            <p>
+                Dat is precies wat QR Studio en Pharaoh Archive zijn: twee werkende voorbeelden van dezelfde vaardigheid, op
+                twee verschillende schalen. De een maakt in seconden een QR-code. De ander maakt drieduizend jaar geschiedenis
+                verkenbaar. Beide zijn gratis, en beide zijn gebouwd in plaats van alleen beschreven.
+            </p>
+
+            <hr>
+
+            <section class="author-section">
+                <div class="author-info">
+                    <p>
+                        <strong>Artikel geschreven door <a href="https://nl.linkedin.com/in/bvdlaan" target="_blank"
+                            rel="noopener noreferrer">Barry van der Laan</a>, AI trainer bij <a
+                            href="https://aipersoneelstraining.nl/about/" target="_blank" rel="noopener noreferrer">AI
+                            Personeelstraining</a></strong>
+                    </p>
+                </div>
+            </section>
+
+            <section class="share-article">
+                <h2 class="section-title">Deel dit artikel met anderen</h2>
+                <div class="share-buttons">
+                    <a href="https://wa.me/?text=AI kan meer dan alleen QR-codes: https://qrstudio.nl/ai-meer-dan-alleen-qr-codes.html" target="_blank" rel="noopener" aria-label="Deel op WhatsApp">WhatsApp</a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://qrstudio.nl/ai-meer-dan-alleen-qr-codes.html" target="_blank" rel="noopener" aria-label="Deel op Facebook">Facebook</a>
+                    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://qrstudio.nl/ai-meer-dan-alleen-qr-codes.html" target="_blank" rel="noopener" aria-label="Deel op LinkedIn">LinkedIn</a>
+                    <a href="mailto:?subject=AI kan meer dan alleen QR-codes&body=Bekijk deze pagina: https://qrstudio.nl/ai-meer-dan-alleen-qr-codes.html" aria-label="Deel via e-mail">E-mail</a>
+                    <button onclick="copyShareLink()" aria-label="Kopieer link">Kopieer link</button>
+                </div>
+                <p id="copy-message" style="display:none; font-size: 14px; color: red; margin-top: 8px;">🔗 Link gekopieerd!</p>
+            </section>
+
+            <hr>
+
+            <section id="faq">
+                <h2 class="section-title">Veelgestelde vragen</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3><strong>Is Pharaoh Archive echt met AI gebouwd?</strong></h3>
+                        <p>Ja. Net als QR Studio is de website met moderne AI-tools ontworpen en gebouwd, en daarna door een mens gecontroleerd en bijgeschaafd. De AI zorgt voor structuur en snelheid, de mens voor juistheid en bruikbaarheid.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3><strong>Wat heeft dit met QR-codes te maken?</strong></h3>
+                        <p>QR Studio en Pharaoh Archive komen uit hetzelfde idee: bouw iets kleins, nuttigs en gratis in plaats van alleen te praten over wat AI kan. De een is een QR-generator, de ander een geschiedenisbron.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3><strong>Is Pharaoh Archive gratis te gebruiken?</strong></h3>
+                        <p>Ja, het is gratis en privacyvriendelijk, zonder account, net als QR Studio.</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <section class="section-helpful-links">
+        <div class="container">
+            <h2 class="section-title">Meer over QR-codes</h2>
+            <ul class="helpful-links">
+                <li><a href="hoe-qrstudio-anders-is.html">Hoe QR Studio anders is</a></li>
+                <li><a href="hoe-qr-code-maken.html">Hoe maak je een QR-code?</a></li>
+                <li><a href="gratis-qr-code-maken.html">Gratis QR-code maken</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">◐</span>
+                    <span class="logo-text">QR Studio</span>
+                </div>
+                <div class="footer-links">
+                    <a href="/privacy.html">Privacy</a>
+                    <a href="/voorwaarden.html">Voorwaarden</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 QR Studio — Gratis QR-code generator op <a href="https://qrstudio.nl">qrstudio.nl</a>
+                    door <a href="https://www.aipersoneelstraining.nl" target="_blank" rel="noopener noreferrer">AI
+                        Personeelstraining</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function copyShareLink() {
+            const url = "https://qrstudio.nl/ai-meer-dan-alleen-qr-codes.html";
+            navigator.clipboard.writeText(url).then(function () {
+                var msg = document.getElementById('copy-message');
+                if (msg) {
+                    msg.style.display = 'block';
+                    setTimeout(function () { msg.style.display = 'none'; }, 2000);
+                }
+            });
+        }
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>

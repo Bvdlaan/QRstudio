@@ -1,0 +1,584 @@
+
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QVTWR6W7HC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-QVTWR6W7HC');
+  </script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO -->
+  <title>QR-code maken? Zo doe je het gratis in 4 stappen | QR Studio</title>
+  <meta name="description" content="Maak gratis een QR-code zonder registratie. Volg ons 4-stappenplan en download je code direct als PNG. QR Studio: veilig, snel en simpel.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.qrstudio.nl/hoe-qr-code-maken.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="QR-code maken? Zo doe je het gratis in 4 stappen | QR Studio">
+  <meta property="og:description" content="Snel en gratis een professionele QR-code maken. Volg het eenvoudige stappenplan van QR Studio en download je code direct als PNG.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.qrstudio.nl/hoe-qr-code-maken.html">
+  <meta property="og:image" content="https://www.qrstudio.nl/og-image.png">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Article-specific improvements */
+    .article-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    
+    .article-container h1,
+    .article-container h2,
+    .article-container h3,
+    .article-container p,
+    .article-container ul,
+    .article-container ol,
+    .article-container li {
+      text-align: left;
+    }
+    
+    .article-container p {
+      margin-bottom: 28px;
+      line-height: 1.75;
+    }
+    
+    .article-container h2 {
+      margin-top: 56px;
+      margin-bottom: 28px;
+      font-size: 1.75rem;
+      font-weight: 600;
+    }
+    
+    .article-container h3 {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+    
+    .article-container ul,
+    .article-container ol {
+      margin-bottom: 28px;
+      padding-left: 28px;
+    }
+    
+    .article-container li {
+      margin-bottom: 12px;
+      line-height: 1.7;
+    }
+    
+    .howto-steps {
+      margin-bottom: 40px;
+      padding-left: 20px;
+    }
+    
+    .howto-steps li {
+      margin-bottom: 32px;
+      padding-left: 0;
+    }
+    
+    .howto-steps li p {
+      margin-top: 12px;
+      margin-bottom: 20px;
+    }
+    
+    .article-image {
+      width: 100%;
+      max-width: 800px;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      border-radius: 16px;
+      margin: 40px 0;
+      box-shadow: var(--shadow);
+      display: block;
+    }
+    
+    .faq-item h3,
+    .faq-item p {
+      text-align: left;
+    }
+    
+    .faq-item p {
+      margin-bottom: 20px;
+    }
+    
+    .btn {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .hero-subtitle {
+      text-align: center;
+    }
+    
+    .hero-actions {
+      text-align: center;
+    }
+    
+    hr {
+      margin: 48px 0;
+      border: none;
+      border-top: 1px solid var(--border);
+    }
+    
+    /* Better spacing for strong elements */
+    .article-container p strong {
+      font-weight: 600;
+      color: var(--text);
+    }
+    
+    /* Author section styling */
+    .author-section {
+      margin: 32px 0;
+      padding: 24px;
+      background: var(--bg-secondary);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+    }
+    
+    .author-info p {
+      margin-bottom: 0;
+      color: var(--text-muted);
+      font-size: 15px;
+      text-align: center;
+    }
+    
+    .author-info a {
+      color: var(--accent2);
+      font-weight: 500;
+    }
+    
+    .author-info a:hover {
+      opacity: 0.8;
+    }
+    
+    @media (max-width: 768px) {
+      .article-container {
+        padding: 0 20px;
+      }
+      
+      .article-container p {
+        margin-bottom: 24px;
+      }
+      
+      .article-container h2 {
+        margin-top: 48px;
+        margin-bottom: 24px;
+        font-size: 1.5rem;
+      }
+      
+      .article-container h3 {
+        margin-top: 32px;
+        margin-bottom: 16px;
+        font-size: 1.2rem;
+      }
+      
+      .article-image {
+        margin: 32px 0;
+        border-radius: 12px;
+      }
+      
+      .howto-steps li {
+        margin-bottom: 28px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .article-container {
+        padding: 0 16px;
+      }
+      
+      .article-container ul,
+      .article-container ol {
+        padding-left: 20px;
+      }
+      
+      .howto-steps {
+        padding-left: 16px;
+      }
+    }
+    .share-article {
+  margin: 48px 0;
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--bg-secondary);
+  text-align: center;
+}
+
+.share-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.share-buttons a,
+.share-buttons button {
+  padding: 10px 16px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.share-buttons button {
+  background: none;
+  border: 1px solid var(--border);
+}
+
+.share-buttons a:hover,
+.share-buttons button:hover {
+  background: var(--accent2);
+  color: #fff;
+  transition: background 0.3s ease;
+}
+
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <a href="/" class="logo">
+          <span class="logo-icon">◐</span>
+          <span class="logo-text">QR Studio</span>
+        </a>
+      </div>
+      <div class="nav-menu" id="navMenu">
+        <a href="/#generator" class="nav-link">Generator</a>
+        <a href="/#types" class="nav-link">QR types</a>
+        <a href="/#faq" class="nav-link">Veelgestelde vragen</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="gratis-qr-code.html" class="nav-link">Waarom QR Studio?</a>
+        <a href="https://qrstudio.eu" target="_blank" rel="noopener noreferrer" class="language-switch" aria-label="Switch to English version">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16"><defs><clipPath id="a"><rect width="12" height="16" fill="#fff"/></clipPath><clipPath id="b"><rect x="12" width="12" height="16" fill="#fff"/></clipPath></defs><g clip-path="url(#a)"><rect width="24" height="16" fill="#012169"/><path stroke="#fff" stroke-width="3.2" d="M0 0L24 16M24 0L0 16"/><path stroke="#C8102E" stroke-width="2" d="M0 0L24 16M24 0L0 16"/><path stroke="#fff" stroke-width="4.8" d="M12 0v16M0 8h24"/><path stroke="#C8102E" stroke-width="3.2" d="M12 0v16M0 8h24"/></g><g clip-path="url(#b)"><rect x="12" width="12" height="16" fill="#B22234"/><path fill="#fff" d="M12 0h12v1.23H12zm0 2.46h12v1.23H12zm0 2.46h12v1.23H12zm0 2.46h12v1.23H12zm0 2.46h12v1.23H12zm0 2.46h12v1.23H12z"/><rect x="12" width="6" height="8.6" fill="#3C3B6E"/><path fill="#fff" d="m13.2 1.72.37.27-.14.44-.44-.14.21-.57zm1.2 0 .37.27-.14.44-.44-.14.21-.57zm1.2 0 .37.27-.14.44-.44-.14.21-.57zm1.2 0 .37.27-.14.h44-.44-.14.21-.57zm-3 1.2.37.27-.14.44-.44-.14.21-.57zm1.2 0 .37.27-.14.44-.44-.14.21-.57zm1.2 0 .37.27-.14.44-.44-.14.21-.57zm-2.4 1.2.37.27-.14.44-.44-.14.21-.57zm1.2 0 .37.27-.14.44-.44-.14.21-.57zm1.2 0 .37.27-.14.44-.44-.14.21-.57zm-3 1.2.37.27-.14.44-.44-.14.21-.57zm1.2 0 .37.27-.14.44-.44-.14.21-.57zm1.2 0 .37.27-.14.44-.44-.14.21-.57z"/></g></svg>
+        </a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title"><span class="gradient-text">Hoe maak je een QR-code?</span></h1>
+      <p class="hero-subtitle">
+        Leer in een paar eenvoudige stappen hoe je gratis een professionele QR-code maakt met QR Studio – zonder registratie, zonder verborgen kosten en direct klaar voor print of online gebruik.
+      </p>
+      <div class="hero-actions">
+        <a href="/#generator" class="btn btn-primary btn-large">Maak nu je QR-code →</a>
+        <a href="/#types" class="btn btn-ghost btn-large">Bekijk alle QR-types</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container article-container">
+
+      <!-- Featured image -->
+      <img src="https://www.qrstudio.nl/images/10-reasons-qr.webp" 
+           alt="QR-code maken met QR Studio - stap voor stap uitleg" 
+           class="article-image"
+           loading="lazy">
+
+      <h2>Wat is een QR-code en waarom zou je er één maken?</h2>
+      <p>
+        Een QR-code is een tweedimensionale streepjescode die je met de camera van een smartphone kunt scannen. Achter die code kan van alles zitten: een link naar je website, een Wi-Fi-netwerk, een digitale menukaart, contactgegevens of een simpel tekstbericht. 
+        In plaats van lange URL's overtypen of gegevens handmatig delen, scan je één keer en ben je direct op de juiste plek.
+      </p>
+      
+      <p>
+        Met <a href="https://www.qrstudio.nl/gratis-qr-code-maken.html">QR Studio kun je gratis een QR-code maken</a> zonder account of registratie. De code wordt lokaal in je browser gegenereerd en je downloadt hem direct als PNG in hoge kwaliteit. Je kunt de code daarna gebruiken op flyers, posters, visitekaartjes, menukaarten en op je website of social media.
+      </p>
+
+      <h2>Welke soorten QR-codes kun je maken met QR Studio?</h2>
+      <p>
+        In de QR Studio generator kun je kiezen uit verschillende QR-types. Enkele veelgebruikte voorbeelden:
+      </p>
+      
+      <ul>
+        <li><strong>Link (URL):</strong> stuur mensen direct naar je website, webshop, landingspagina of formulier.</li>
+        <li><strong>Wi-Fi:</strong> laat gasten in één scan verbinden met je netwerk, vergelijkbaar met de voorbeelden op de pagina over <a href="https://www.qrstudio.nl/wifi-qr-code-voor-gasten-thuis.html">Wi-Fi QR-codes voor thuisgasten</a>.</li>
+        <li><strong>Contactkaart (vCard):</strong> voeg naam, telefoonnummer en e-mailadres toe zodat mensen je gegevens in één keer kunnen opslaan.</li>
+        <li><strong>Telefoonnummer of sms:</strong> laat gebruikers direct bellen of een sms-bericht voorbereiden.</li>
+        <li><strong>E-mail:</strong> open direct een nieuw e-mailbericht met ingevuld adres en onderwerp.</li>
+        <li><strong>Tekst:</strong> toon een korte boodschap, bijvoorbeeld instructies of een kortingscode.</li>
+      </ul>
+      
+      <p>
+        Je kunt al deze QR-codes ook direct op je telefoon maken; kijk daarvoor op <a href="https://www.qrstudio.nl/qr-code-maken-op-mobiel.html">QR-code maken op mobiel</a>.
+      </p>
+
+      <h2>QR-code maken in 4 duidelijke stappen</h2>
+      <p>
+        Een QR-code maken met QR Studio is eenvoudig. Je hebt alleen een browser nodig op je laptop, tablet of smartphone.
+      </p>
+
+      <ol class="howto-steps">
+        <li>
+          <strong>Stap 1: Ga naar de gratis QR-code generator van QR Studio</strong>
+          <p>
+            Open de homepage van QR Studio en scroll naar de generator of klik op de knop "Generator" in het menu. Je ziet verschillende iconen voor QR-types, zoals link, Wi-Fi, contact of tekst.
+          </p>
+        </li>
+
+        <li>
+          <strong>Stap 2: Kies het gewenste type QR-code</strong>
+          <p>
+            Selecteer het type QR-code dat je wilt maken. Wil je bijvoorbeeld bezoekers naar je website sturen, kies dan voor "URL". Wil je je Wi-Fi delen, kies dan het Wi-Fi icoon. Voor gebruikssituaties in de zorg kun je dezelfde aanpak volgen als bij <a href="https://www.qrstudio.nl/wifi-qr-gezondheidszorg.html">Wi-Fi QR-codes in de gezondheidszorg</a>.
+          </p>
+        </li>
+
+        <li>
+          <strong>Stap 3: Vul je gegevens correct in</strong>
+          <p>
+            Vul de gegevens in die bij het gekozen type horen. Bij een URL is dat je webadres, bij Wi-Fi je netwerknaam, beveiliging en wachtwoord, en bij een contactkaart de gegevens die je wilt delen. Controleer goed of alles correct is ingevuld; de QR-code verwijst precies naar wat je hier invoert.
+          </p>
+        </li>
+
+        <li>
+          <strong>Stap 4: Genereer en download je QR-code als PNG</strong>
+          <p>
+            Klik op de knop om de QR-code te genereren. Binnen een seconde verschijnt je QR-code op het scherm. Je kunt de code vervolgens als PNG downloaden. Deze afbeelding kun je opslaan, printen of toevoegen aan je digitale documenten en websites.
+          </p>
+        </li>
+      </ol>
+
+      <h2>Is het maken van een QR-code echt gratis?</h2>
+      <p>
+        Veel online generators noemen zich gratis, maar plaatsen tracking in je code, laten je QR-code na een tijdje verlopen of beperken het aantal scans. QR Studio doet dat niet. Op de pagina over <a href="https://www.qrstudio.nl/echt-gratis-qr-code.html">echt gratis QR-codes</a> leggen we precies uit hoe dat werkt.
+      </p>
+      
+      <p>
+        Belangrijk om te weten:
+      </p>
+      
+      <ul>
+        <li>er is geen registratie of account nodig;</li>
+        <li>we slaan de inhoud van je QR-code niet op op de server;</li>
+        <li>er is geen limiet op het aantal codes dat je mag maken;</li>
+        <li>QR-codes verlopen niet; eenmaal gedownload kun je ze onbeperkt gebruiken.</li>
+      </ul>
+
+      <h2>Tips voor het gebruik van QR-codes in print en online</h2>
+      <p>
+        Wil je je QR-code gebruiken op drukwerk zoals flyers, posters of menukaarten? Zorg dan dat de code groot genoeg is om makkelijk te scannen. Als vuistregel kun je aanhouden dat de QR-code minstens 2 cm x 2 cm is voor korte afstanden, en groter bij posters of buitenreclame.
+      </p>
+      
+      <p>
+        Test je QR-code altijd op meerdere apparaten, bijvoorbeeld op een iPhone en een Android-toestel. Op QR Studio vind je aparte uitleg voor <a href="https://www.qrstudio.nl/hoe-qr-code-scannen-met-iphone.html">QR-code scannen met iPhone</a> en <a href="https://www.qrstudio.nl/qr-code-scannen-met-android.html">QR-code scannen met Android</a>. Zo weet je zeker dat ook je bezoekers of klanten de code probleemloos kunnen gebruiken.
+      </p>
+
+      <h2>Samenvatting: in een paar stappen je eigen QR-code</h2>
+      <p>
+        Een QR-code maken is veel eenvoudiger dan de meeste mensen denken. Kies het type, vul je gegevens in, genereer de code en download het PNG-bestand. Met QR Studio doe je dit allemaal gratis, zonder account en zonder dat je gegevens worden opgeslagen. Je kunt de code vervolgens gebruiken in presentaties, op drukwerk, in e-mails of op je website.
+      </p>
+      
+      <p>
+        Wil je meteen aan de slag? Gebruik dan de knop hieronder om direct naar de generator te gaan.
+      </p>
+
+      <p><strong>Klaar om je eerste QR-code te maken?</strong></p>
+      <a href="/#generator" class="btn btn-primary btn-large">Maak nu je QR-code</a>
+
+      <hr>
+
+      <!-- Author Section -->
+      <section class="author-section">
+        <div class="author-info">
+          <p>
+            <strong>Artikel geschreven door <a href="https://nl.linkedin.com/in/bvdlaan" target="_blank" rel="noopener noreferrer">Barry van der Laan</a>, AI trainer bij <a href="https://aipersoneelstraining.nl/about/" target="_blank" rel="noopener noreferrer">AI Personeelstraining</a></strong>
+          </p>
+        </div>
+      </section>
+
+      <hr>
+<!-- Share this article -->
+<section class="share-article">
+  <h2 class="section-title">Deel dit artikel met anderen</h2>
+  <div class="share-buttons">
+    <a href="https://wa.me/?text=Bekijk deze handige uitleg over QR-codes: https://www.qrstudio.nl/hoe-qr-code-maken.html" target="_blank" rel="noopener" aria-label="Deel op WhatsApp">WhatsApp</a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.qrstudio.nl/hoe-qr-code-maken.html" target="_blank" rel="noopener" aria-label="Deel op Facebook">Facebook</a>
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.qrstudio.nl/hoe-qr-code-maken.html" target="_blank" rel="noopener" aria-label="Deel op LinkedIn">LinkedIn</a>
+    <a href="mailto:?subject=Handige uitleg over QR-codes&body=Bekijk deze pagina: https://www.qrstudio.nl/hoe-qr-code-maken.html" aria-label="Deel via e-mail">E-mail</a>
+    <button onclick="copyShareLink()" aria-label="Kopieer link">Kopieer link</button>
+  </div>
+  <p id="copy-message" style="display:none; font-size: 14px; color: var(--accent2); margin-top: 8px;">🔗 Link gekopieerd!</p>
+</section>
+
+
+      <!-- FAQ Section -->
+      <section id="faq">
+        <h2 class="section-title">Veelgestelde vragen over QR-codes maken</h2>
+        <div class="faq-grid">
+
+          <div class="faq-item">
+            <h3><strong>Is het maken van een QR-code met QR Studio echt gratis?</strong></h3>
+            <p>
+              Ja. Het gebruik van QR Studio is gratis. Je hebt geen account nodig, er zijn geen verborgen kosten en je mag de gegenereerde QR-codes onbeperkt gebruiken, ook zakelijk. De code wordt lokaal in je browser gemaakt en kan daarna vrij worden ingezet.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3><strong>Worden mijn gegevens opgeslagen als ik een QR-code maak?</strong></h3>
+            <p>
+              Nee. De generator van QR Studio verwerkt de ingevoerde gegevens in je browser en slaat de inhoud van je QR-code niet op in een database. Daardoor zijn er geen profielen, tracking of koppelingen met advertentienetwerken. Je behoudt zelf de controle over de inhoud die je deelt.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3><strong>Werkt mijn QR-code altijd, of kan hij verlopen?</strong></h3>
+            <p>
+              De QR-code zelf verloopt niet. Zolang de link of gegevens achter de QR-code geldig blijven, blijft de code werken. Gebruik je een URL, dan is het belangrijk dat de bijbehorende pagina online blijft. Als je een stabiel adres gebruikt, kun je de inhoud van die pagina aanpassen zonder je QR-code te hoeven vervangen.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3><strong>Hoe groot moet een QR-code zijn voor drukwerk?</strong></h3>
+            <p>
+              Voor flyers en visitekaartjes is een QR-code van ongeveer 2 x 2 cm meestal voldoende. Voor posters, banners of borden op grotere afstand kun je beter een grotere code gebruiken. Test altijd even met een telefoon voordat je naar de drukker gaat, zodat je zeker weet dat de code goed scanbaar is.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3><strong>Kan ik een QR-code ook op mijn telefoon maken?</strong></h3>
+            <p>
+              Ja. QR Studio werkt ook op mobiele apparaten. Op de pagina <a href="https://www.qrstudio.nl/qr-code-maken-op-mobiel.html">QR-code maken op mobiel</a> leggen we uit hoe je direct vanaf je telefoon een code maakt en deze meteen laat scannen door anderen.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- FAQ Schema -->
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is het maken van een QR-code met QR Studio echt gratis?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ja. Het gebruik van QR Studio is gratis. Je hebt geen account nodig, er zijn geen verborgen kosten en je mag de gegenereerde QR-codes onbeperkt gebruiken, ook zakelijk. De QR-code wordt lokaal in de browser gegenereerd en kan daarna vrij worden ingezet."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Worden mijn gegevens opgeslagen als ik een QR-code maak?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nee. De generator van QR Studio verwerkt de ingevoerde gegevens in de browser en slaat de inhoud van de QR-code niet op in een database. Er worden geen profielen opgebouwd en er is geen koppeling met advertentienetwerken."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Werkt mijn QR-code altijd, of kan hij verlopen?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "De QR-code zelf verloopt niet. Zolang de link of gegevens achter de QR-code geldig blijven, blijft de code werken. Gebruik bij voorkeur een stabiele URL zodat je de inhoud van de pagina kunt wijzigen zonder een nieuwe QR-code te hoeven maken."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Hoe groot moet een QR-code zijn voor drukwerk?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Voor flyers en visitekaartjes is een QR-code van ongeveer 2 bij 2 centimeter meestal voldoende. Voor posters en borden op grotere afstand is een grotere code nodig. Test de leesbaarheid altijd met een smartphone voordat je gaat drukken."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Kan ik een QR-code ook op mijn telefoon maken?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ja. QR Studio werkt ook op smartphones en tablets. Je kunt direct vanaf je telefoon een QR-code genereren en het PNG-bestand opslaan of laten scannen door anderen."
+            }
+          }
+        ]
+      }
+      </script>
+
+    </div>
+  </main>
+
+  <!-- Helpful Links -->
+  <section class="section-helpful-links">
+    <div class="container">
+      <h2 class="section-title">Meer over QR-codes</h2>
+      <ul class="helpful-links">
+        <li><a href="hoe-qr-code-scannen-met-iphone.html">Hoe QR-code scannen met iPhone</a></li>
+        <li><a href="qr-code-scannen-met-android.html">Hoe QR-code scannen met Android</a></li>
+        <li><a href="hoe-qr-code-scannen-met-samsung.html">Hoe QR-code scannen met Samsung</a></li>
+        <li><a href="qr-code-maken-op-mobiel.html">Kan je een QR-code maken op je mobiel?</a></li>
+        <li><a href="gratis-qr-code-maken.html">Gratis QR-code maken</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo-icon">◐</span>
+          <span class="logo-text">QR Studio</span>
+        </div>
+        <div class="footer-links">
+          <a href="/privacy.html">Privacy</a>
+          <a href="/voorwaarden.html">Voorwaarden</a>
+          <a href="contact.html">Contact</a>
+          <a href="https://nl.linkedin.com/company/ai-personeelstraining" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profiel van AI Personeelstraining">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect width="24" height="24" rx="1.5" fill="#0A66C2"/><path fill="white" d="M8 19H5v-9h3v9zM6.5 8.25A1.75 1.75 0 1 1 8.25 6.5 1.75 1.75 0 0 1 6.5 8.25zM19 19h-3v-4.75c0-1.4-1.2-2.5-2.5-2.5S11 12.85 11 14.25V19h-3v-9h2.9v1.3a3.11 3.11 0 0 1 2.6-1.4c2.5 0 4.5 2.2 4.5 5.15z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 QR Studio — Gratis QR-code generator op <a href="https://www.qrstudio.nl">www.qrstudio.nl</a> door <a href="https://www.aipersoneelstraining.nl" target="_blank" rel="noopener noreferrer">AI Personeelstraining</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="breadcrumb-schema.ts" defer></script>
+  <script>
+function copyShareLink() {
+  navigator.clipboard.writeText("https://www.qrstudio.nl/hoe-qr-code-maken.html")
+    .then(() => {
+      const msg = document.getElementById("copy-message");
+      msg.style.display = "block";
+      setTimeout(() => { msg.style.display = "none"; }, 2000);
+    });
+}
+</script>
+
+  <script src="app.js"></script>
+</body>
+</html>
